@@ -1,0 +1,2790 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --bodyColor: "green";
+}
+
+@font-face {
+  font-family: "InterRegular";
+  src: url("./assets/fonts/InterRegular.ttf");
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("./assets/fonts/InterBold.ttf");
+}
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("./assets/fonts/AvenirHeavy.otf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat.ttf");
+}
+@font-face {
+  font-family: "AvenirLight";
+  src: url("./assets/fonts/AvenirLight.otf");
+}
+.app .loader {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .innerNav .navbar-brand img {
+  width: 80%;
+}
+nav .innerNav .navbar-collapse {
+  justify-content: flex-end;
+}
+nav .innerNav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav .innerNav ul li {
+  margin: 0 15px;
+}
+nav .innerNav ul li a {
+  color: #261b6c;
+  font-family: "AvenirHeavy";
+  font-weight: 750;
+  font-size: 20px;
+  line-height: 41px;
+}
+nav .innerNav ul li:nth-child(5) {
+  background-color: rgb(202, 166, 82);
+  padding: 0px 30px;
+  border-radius: 4px;
+}
+nav .innerNav ul li:nth-child(5) a {
+  color: white;
+}
+nav .btn {
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.homePage {
+  padding: 0 12px;
+}
+.homePage .banner {
+  background-image: url("./assets/images/Rectangle01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.homePage .banner .innerBanner {
+  padding: 5%;
+}
+.homePage .banner .innerBanner .bannerItem h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 60px;
+  color: white;
+  margin-top: 36%;
+}
+.homePage .banner .innerBanner .bannerItem h1 span {
+  border-bottom: #b2904c 5px solid;
+}
+.homePage .banner .innerBanner .bannerItem p {
+  color: white;
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+.homePage .banner .innerBanner .bannerItem .btn {
+  background-color: rgb(202, 166, 82);
+  padding: 10px 60px;
+  border-radius: 5px;
+  color: white;
+  font-family: "AvenirHeavy";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+}
+.homePage .banner .innerBanner .bannerImages {
+  display: flex;
+  justify-content: center;
+}
+.homePage .banner .innerBanner .bannerImages img {
+  width: 50%;
+  margin-left: -28%;
+}
+.homePage .banner .innerBanner .bannerImages img:nth-child(1) {
+  margin-left: 28%;
+  width: 50%;
+}
+
+.aboutBakerInn {
+  padding: 10% 0;
+}
+.aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+}
+.aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 p {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 .btn {
+  background-color: rgb(202, 166, 82);
+  padding: 10px 60px;
+  border-radius: 5px;
+  color: white;
+  margin: 0 0 10% 0;
+  font-family: "AvenirHeavy";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 26px;
+  line-height: 34px;
+  text-align: center;
+}
+.aboutBakerInn .AboutBakerInnImages img {
+  height: 334px;
+}
+
+.ourProducts {
+  padding: 5% 0;
+  background: #f8f8f8;
+}
+.ourProducts h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+}
+.ourProducts .OuterOurProducts {
+  text-align: center;
+}
+.ourProducts .OuterOurProducts .btn {
+  background: #b2904c;
+  border-radius: 5px;
+  padding: 15px 60px;
+  font-size: 26px;
+  line-height: 34px;
+  font-family: "AvenirHeavy";
+  font-weight: 750;
+  color: #ffffff;
+}
+.ourProducts .OuterOurProducts .innerOurProducts {
+  padding: 0 0 5% 0;
+}
+.ourProducts .OuterOurProducts .innerOurProducts .ourProductsImages {
+  position: relative;
+}
+.ourProducts .OuterOurProducts .innerOurProducts .ourProductsImages img {
+  height: 334px;
+}
+.ourProducts .OuterOurProducts .innerOurProducts .ourProductsImages h3 {
+  position: absolute;
+  bottom: 0;
+  left: 53px;
+  color: white;
+}
+
+.bookATour {
+  padding: 10% 0;
+}
+.bookATour .outerBookTour .innerBookTour {
+  align-items: center;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+  width: 110%;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem p {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #261b6c;
+  opacity: 0.8;
+  padding: 0 13% 0 0;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .btn {
+  background: #b2904c;
+  border-radius: 5px;
+  font-family: "AvenirHeavy";
+  font-style: normal;
+  font-weight: 750;
+  color: white;
+  font-size: 26px;
+  line-height: 34px;
+  padding: 15px 60px;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal {
+  background-color: #f7f5e8;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content {
+  padding: 5% 0;
+  border: none;
+  background-color: white;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .btn-close {
+  position: absolute;
+  right: 22px;
+  top: 17px;
+  padding: 15px;
+  border-radius: 80px;
+  background-color: #261b6c;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems .form-floating .form-control {
+  border: none;
+  background-color: #f7f5e8;
+  color: blue;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems .form-floating .date {
+  color: #261b6c;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems .form-select {
+  padding: 1rem 0.75rem;
+  border: none;
+  background-color: #f7f5e8;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems .form-check .form-check-input {
+  border: none;
+  background-color: #f7f5e8;
+  padding: 12px;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems .form-check .form-check-input:focus {
+  box-shadow: #b2904c;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems .form-check .form-check-label {
+  margin-left: 10px;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems .form-check .form-check-input:checked {
+  background-color: #261b6c;
+  color: #261b6c;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems p {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #261b6c;
+  opacity: 0.8;
+  padding: 2% 0;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems p span {
+  font-family: "AvenirHeavy";
+  margin-left: 5px;
+}
+.bookATour .outerBookTour .innerBookTour .bookTourItem .BookModal .modal .modal-dialog .modal-content .modal-body .modalForms .modalFormItems .form-check-label {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+
+.donationReq {
+  padding: 10% 0;
+  background: #f8f8f8;
+}
+.donationReq .container-fluid .row {
+  align-items: center;
+}
+.donationReq .container-fluid .row .col-lg-6 h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+}
+.donationReq .container-fluid .row .col-lg-6 p {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.donationReq .container-fluid .row .col-lg-6 button {
+  background: #b2904c;
+  border-radius: 5px;
+  font-family: "AvenirHeavy";
+  font-style: normal;
+  font-weight: 750;
+  color: white;
+  padding: 15px 60px;
+  font-size: 26px;
+  line-height: 34px;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal {
+  background-color: #f7f5e8;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content {
+  padding: 5% 0;
+  border: none;
+  background-color: white;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .modalText h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  color: #261b6c;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .modalText p {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #261b6c;
+  opacity: 0.8;
+  padding: 2% 8%;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .btn-close {
+  position: absolute;
+  right: 22px;
+  top: 17px;
+  padding: 15px;
+  border-radius: 80px;
+  background-color: #261b6c;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .modal-body .modalForms .formItem .form-floating .form-control {
+  border: none;
+  background-color: #f7f5e8;
+  color: blue;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .modal-body .modalForms .formItem .form-select {
+  padding: 1rem 0.75rem;
+  border: none;
+  background-color: #f7f5e8;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .modal-body .modalForms .formItem .form-check .form-check-input {
+  border: none;
+  background-color: #f7f5e8;
+  padding: 12px;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .modal-body .modalForms .formItem .form-check .form-check-input:focus {
+  box-shadow: #b2904c;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .modal-body .modalForms .formItem .form-check .form-check-label {
+  margin-left: 10px;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .modal-body .modalForms .formItem .form-check .form-check-input:checked {
+  background-color: #261b6c;
+  color: #261b6c;
+}
+.donationReq .container-fluid .row .col-lg-6 .donationModal .modal .modal-dialog .modal-content .modal-body .modalForms .formItem .form-check-label {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+
+.kidsCorner {
+  padding: 15% 12px;
+}
+.kidsCorner .container-fluid {
+  padding: 10% 0;
+  background-image: url("./assets/images/Rectangle01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: white;
+}
+.kidsCorner .container-fluid .row .col-12 {
+  text-align: center;
+}
+.kidsCorner .container-fluid .row .col-12 .kidsImage {
+  position: relative;
+}
+.kidsCorner .container-fluid .row .col-12 .kidsImage img:nth-child(1) {
+  position: absolute;
+  top: -139px;
+  left: -51px;
+  width: 79%;
+}
+.kidsCorner .container-fluid .row .col-12 .kidsImage img:nth-child(2) {
+  position: absolute;
+  top: 238px;
+  left: -19px;
+  width: 30%;
+}
+.kidsCorner .container-fluid .row .col-12 .kidsImage img:nth-child(3) {
+  position: absolute;
+  top: 338px;
+  right: -44px;
+  width: 14%;
+}
+.kidsCorner .container-fluid .row .col-12 .kidsImage img:nth-child(4) {
+  position: absolute;
+  left: 28px;
+  top: -250px;
+  z-index: 2;
+}
+.kidsCorner .container-fluid .row .col-12 h2 {
+  font-family: "3Dumb";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 95px;
+}
+.kidsCorner .container-fluid .row .col-12 p {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0 18%;
+  text-align: center;
+}
+.kidsCorner .container-fluid .row .col-12 .btn {
+  background: #ff4655;
+  border-radius: 5px;
+  font-family: "AvenirHeavy";
+  font-style: normal;
+  font-weight: 750;
+  color: white;
+  font-size: 26px;
+  line-height: 34px;
+  padding: 15px 60px;
+}
+
+.bakersRecipes {
+  padding: 0 0 10% 0;
+  background: white;
+}
+.bakersRecipes .outerBakersRec h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+}
+.bakersRecipes .outerBakersRec .bloc-tabs {
+  display: flex;
+  justify-content: center;
+}
+.bakersRecipes .outerBakersRec .bloc-tabs .tabs {
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.bakersRecipes .outerBakersRec .bloc-tabs .tabs li {
+  list-style: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 49px;
+  color: #261b6c;
+}
+.bakersRecipes .outerBakersRec .bloc-tabs .active-tabs {
+  border-bottom: 5px solid #b2904c;
+}
+.bakersRecipes .outerBakersRec .content-tabs .content {
+  display: none;
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content {
+  display: block;
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card {
+  padding-bottom: -1%;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card img {
+  padding: 5px 5px 0 5px;
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 43px;
+  color: #261b6c;
+  margin-bottom: 15px;
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 23px;
+  color: #261b6c;
+  margin: 5px 0;
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p span {
+  margin-left: 15px;
+  color: #b2904c;
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p .cardPeople {
+  margin-left: 40px;
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn {
+  background-color: #b2904c;
+  border: none;
+  padding: 20px;
+  width: 73px;
+  height: auto;
+  margin: -60px 0 0 0;
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn .svg-icon path,
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn .svg-icon polygon,
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn .svg-icon rect {
+  fill: #ffffff;
+}
+.bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn .svg-icon circle {
+  stroke: #ffffff;
+  stroke-width: 1;
+}
+.bakersRecipes .modal {
+  background-color: #f7f5e8;
+}
+.bakersRecipes .modal .modalContent {
+  background-color: #ffffff;
+}
+.bakersRecipes .modal .modalContent .modal-body .btn-close {
+  position: absolute;
+  right: 20px;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .innerimage {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .innerimage .image {
+  width: 100%;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .innerimage .image:first-child {
+  grid-column: span 2;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .modalDetailsImage .heading .ingridTitle .lineDot {
+  width: 100%;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .modalDetailsImage .indridValues {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .modalDetailsImage .indridValues small {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .modalDetailsImage .steps .d-flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .modalDetailsImage .steps .stepTitleText {
+  width: 50%;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .modalDetailsImage .steps .stepTitleText h5 {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 28px;
+  color: #261b6c;
+}
+.bakersRecipes .modal .modalContent .modal-body .modalItems .allImages .modalDetailsImage .steps .stepTitleText small {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+
+.getNotified {
+  background-image: url("./assets/images/Promo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+.getNotified .outerGetNot .innerrGetNot .getNotItem h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  margin-top: 24%;
+  width: 92%;
+  color: white;
+  margin-bottom: 3%;
+}
+.getNotified .outerGetNot .innerrGetNot .getNotItem .input-group input {
+  background: #c6a460;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  padding: 25px;
+}
+.getNotified .outerGetNot .innerrGetNot .getNotItem .input-group .btn {
+  scale: 0.9;
+  background: #c6a460;
+  background-color: #261b6c;
+}
+.getNotified .outerGetNot .innerrGetNot .getNotItem .d-flex img {
+  width: 50%;
+}
+.getNotified .outerGetNot .innerrGetNot .getNotItem .d-flex img:nth-child(2) {
+  margin-left: -29%;
+  width: 100%;
+}
+.getNotified .outerGetNot .innerrGetNot .getNotItem .d-flex img:nth-child(3) {
+  margin-left: -29%;
+}
+
+footer {
+  background-color: #261b6c;
+  color: white;
+}
+footer .outerFooter .footerTopItem {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+footer .outerFooter .footerTopItem .whiteBack {
+  width: 100%;
+  background-color: white;
+  height: 3px;
+}
+footer .outerFooter hr {
+  opacity: 1;
+}
+footer .outerFooter .innerFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 4% 0 0 0;
+}
+footer .outerFooter .innerFooter .footerItem h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 37px;
+}
+footer .outerFooter .innerFooter .footerItem p {
+  font-family: "Avenir LT Std";
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.8;
+  margin: 0;
+  line-height: 31px;
+}
+footer .outerFooter .innerFooter .footerItem .instagramFeed div img {
+  max-width: 80%;
+}
+footer .outerFooter .innerFooter .footerItem .socialIcons {
+  margin-top: 20px;
+}
+footer .outerFooter .innerFooter .footerItem .socialIcons a {
+  color: #261b6c;
+}
+footer .outerFooter .innerFooter .footerItem .socialIcons a img {
+  margin: 5px;
+}
+footer .outerFooter .innerFooter .footerItem .navbar-nav .nav-item .nav-link {
+  font-family: "Avenir LT Std";
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.8;
+  padding: 0;
+  line-height: 31px;
+}
+footer .outerFooter .footerItem:nth-child(2) {
+  margin-left: 0;
+}
+footer .outerFooter .footerItem:nth-child(3) {
+  margin-left: 0%;
+}
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copyright .d-flex {
+  gap: 0.3rem;
+  align-items: center;
+}
+footer .copyright .d-flex p {
+  height: 0.5rem;
+}
+footer .copyright .d-flex img {
+  margin-top: -14px;
+}
+footer .copyright p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Avenir LT Std";
+}
+footer .copyright p span {
+  color: #c6a460;
+  margin-left: 5px;
+}
+
+.aboutUs .aboutBanner {
+  position: relative;
+}
+.aboutUs .aboutBanner img {
+  border-radius: 10px;
+}
+.aboutUs .aboutBanner h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 85px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+.aboutUs .aboutBanner .vectorLines {
+  position: absolute;
+  bottom: 0;
+  bottom: 33px;
+  right: 45px;
+}
+.aboutUs .ourVisions {
+  padding: 10% 0;
+}
+.aboutUs .ourVisions .outerVisions {
+  background: #f7f5e8;
+  border-radius: 10px;
+  padding: 8% 5%;
+}
+.aboutUs .ourVisions .outerVisions .innerOurVisions .ourVisionItem .d-flex {
+  margin-left: 10%;
+}
+.aboutUs .ourVisions .outerVisions .innerOurVisions .ourVisionItem .d-flex .missionText {
+  margin-left: 6%;
+}
+.aboutUs .ourVisions .outerVisions .innerOurVisions .ourVisionItem .d-flex .missionText h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 67px;
+  color: #261b6c;
+}
+.aboutUs .ourVisions .outerVisions .innerOurVisions .ourVisionItem .d-flex .missionText p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.aboutUs .ourCoreValues {
+  background: #f8f8f8;
+  padding: 5% 0;
+}
+.aboutUs .ourCoreValues h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+  text-align: center;
+}
+.aboutUs .ourCoreValues .outerCoreValues {
+  display: flex;
+}
+.aboutUs .ourCoreValues .outerCoreValues .coreValueitem:nth-child(4) {
+  margin-top: 5%;
+}
+.aboutUs .ourCoreValues .outerCoreValues .coreValueitem:nth-child(5) {
+  margin-top: 5%;
+}
+.aboutUs .ourCoreValues .outerCoreValues .coreCards .card {
+  border: none;
+  background: #f8f8f8;
+}
+.aboutUs .ourCoreValues .outerCoreValues .coreCards .card img {
+  height: 385px;
+  border-radius: 7px;
+}
+.aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 49px;
+  color: #261b6c;
+  margin: 5% 0;
+}
+.aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body .cardSecTitle p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.aboutUs .aboutCeo {
+  padding: 5% 0;
+}
+.aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd {
+  margin: 10% 0;
+}
+.aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  color: #261b6c;
+}
+.aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 55px;
+}
+.aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p span {
+  font-family: "Bulgatti";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 77px;
+  border-bottom: #261b6c 1px solid;
+}
+
+.productsPage .productsBanner {
+  position: relative;
+}
+.productsPage .productsBanner img {
+  border-radius: 10px;
+}
+.productsPage .productsBanner h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 85px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+.productsPage .productsBanner .vectorLines {
+  position: absolute;
+  bottom: 0;
+  bottom: 33px;
+  right: 45px;
+}
+.productsPage .ourProducts h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+}
+.productsPage .ourProducts .bloc-tabs {
+  display: flex;
+  justify-content: center;
+}
+.productsPage .ourProducts .bloc-tabs .tabs {
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.productsPage .ourProducts .bloc-tabs .tabs li {
+  list-style: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 49px;
+  color: #261b6c;
+}
+.productsPage .ourProducts .bloc-tabs .active-tabs {
+  border-bottom: 5px solid #b2904c;
+}
+.productsPage .ourProducts .content-tabs .content {
+  display: none;
+}
+.productsPage .ourProducts .content-tabs .active-content {
+  display: block;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerBread .innerBread .card {
+  background: #f7f5e8;
+  border-radius: 7px;
+  border: none;
+  margin-left: 19px;
+  padding: 0 5px;
+  height: 100%;
+  text-align: center;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerBread .innerBread .card img {
+  margin-top: -70px;
+  margin-bottom: -46px;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerBread .innerBread .card .card-body h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 0 10px;
+  line-height: 35px;
+  color: #261b6c;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerBread .innerBread .card .card-body p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  color: #261b6c;
+  opacity: 0.9;
+}
+.productsPage .ourProducts .content-tabs .active-content .outermeat .innermeat .card {
+  background: #f7f5e8;
+  border-radius: 7px;
+  border: none;
+  margin-left: 19px;
+  padding: 0 5px;
+  height: 100%;
+  text-align: center;
+}
+.productsPage .ourProducts .content-tabs .active-content .outermeat .innermeat .card img {
+  padding: 0 5%;
+}
+.productsPage .ourProducts .content-tabs .active-content .outermeat .innermeat .card .card-body h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 0 10px;
+  line-height: 35px;
+  color: #261b6c;
+}
+.productsPage .ourProducts .content-tabs .active-content .outermeat .innermeat .card .card-body p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  color: #261b6c;
+  opacity: 0.9;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerScones .innerScones .card {
+  background: #f7f5e8;
+  border-radius: 7px;
+  border: none;
+  margin-left: 19px;
+  padding: 0 5px;
+  height: 100%;
+  text-align: center;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerScones .innerScones .card img {
+  padding: 0 5%;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerScones .innerScones .card .card-body h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 0 10px;
+  line-height: 35px;
+  color: #261b6c;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerScones .innerScones .card .card-body p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  color: #261b6c;
+  opacity: 0.9;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerDonut .innerDonut .card {
+  background: #f7f5e8;
+  border-radius: 7px;
+  border: none;
+  margin-left: 19px;
+  padding: 0 5px;
+  height: 100%;
+  text-align: center;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerDonut .innerDonut .card img {
+  padding: 0 5%;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerDonut .innerDonut .card .card-body h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 0 10px;
+  line-height: 35px;
+  color: #261b6c;
+}
+.productsPage .ourProducts .content-tabs .active-content .outerDonut .innerDonut .card .card-body p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  color: #261b6c;
+  opacity: 0.9;
+}
+
+.tikTokFeed h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 52px;
+  width: 87%;
+  color: #261b6c;
+}
+.tikTokFeed p {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.tikTokFeed p span {
+  color: #c6a460;
+}
+
+.kidsBanner {
+  margin-top: -3%;
+  padding: 0 0 5% 0;
+}
+.kidsBanner .kidsItem img {
+  max-width: 110%;
+  margin-top: -116px;
+}
+.kidsBanner .kidsItem2 img {
+  width: 130%;
+  height: auto;
+  margin: -16% 0 0 -19%;
+}
+.kidsBanner h1 {
+  font-family: "3Dumb";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 1;
+  color: #261b6c;
+}
+
+.games {
+  margin-bottom: 20px;
+}
+.games .gameBackground {
+  border-radius: 10px;
+  padding: 3% 0;
+  margin: 3% 0;
+  color: white;
+}
+.games .gameBackground:nth-child(1) {
+  background: #018bf1;
+}
+.games .gameBackground:nth-child(1) .btn {
+  color: white;
+  background-color: #b2904c;
+}
+.games .gameBackground:nth-child(2) {
+  background: #ff4655;
+}
+.games .gameBackground:nth-child(2) .btn {
+  color: #ff4655;
+  background-color: white;
+}
+.games .gameBackground:nth-child(3) {
+  background: #261b6c;
+}
+.games .gameBackground:nth-child(3) .btn {
+  color: white;
+  background-color: #b2904c;
+}
+.games h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 67px;
+}
+.games p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 20px;
+  line-height: 25px;
+  opacity: 0.8;
+  padding-right: 27%;
+}
+.games .btn {
+  background: #b2904c;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 73px;
+}
+
+.contactUsPage .contactUsBanner {
+  position: relative;
+}
+.contactUsPage .contactUsBanner img {
+  border-radius: 10px;
+}
+.contactUsPage .contactUsBanner h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 85px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+.contactUsPage .contactUsBanner .vectorLines {
+  position: absolute;
+  bottom: 0;
+  bottom: 33px;
+  right: 45px;
+}
+.contactUsPage .contactAddresses {
+  padding: 10% 0;
+}
+.contactUsPage .contactAddresses .outerContact {
+  background: #f7f5e8;
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 5%;
+}
+.contactUsPage .contactAddresses .outerContact .innerContact {
+  padding: 0 44px;
+}
+.contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem img {
+  width: 80%;
+}
+.contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  color: #261b6c;
+}
+.contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: #261b6c;
+  margin: 0;
+}
+.contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem p span {
+  font-weight: 800;
+}
+.contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem .contactMid {
+  margin: 9px 0;
+}
+.contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem .contactMid p {
+  margin: 0;
+}
+.contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem .voip p {
+  margin: 0;
+}
+.contactUsPage .depots {
+  padding: 0 0 10% 0;
+}
+.contactUsPage .depots .outerDepots h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+}
+.contactUsPage .depots .outerDepots .innerDeports {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 10.5%;
+}
+.contactUsPage .depots .outerDepots .innerDeports .depotsItem .titleBorder {
+  border-bottom: 3px solid #f7f5e8;
+  border-right: 3px solid #f7f5e8;
+}
+.contactUsPage .depots .outerDepots .innerDeports .depotsItem .titleBorder h3 {
+  padding: 15px;
+  color: #261b6c;
+}
+.contactUsPage .depots .outerDepots .innerDeports .depotsItem .locationBorder {
+  border-right: #f7f5e8 3px solid;
+}
+.contactUsPage .depots .outerDepots .innerDeports .depotsItem .locationBorder p {
+  padding: 0 15px;
+}
+.contactUsPage .depots .outerDepots .innerDeports .depotsItem p {
+  margin: 0;
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 20px;
+  line-height: 43px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.contactUsPage .depots .outerDepots .innerDeports .depotsItem:nth-child(2) p {
+  font-weight: 400;
+}
+.contactUsPage .enquiries {
+  background: #f8f8f8;
+  padding: 5% 0;
+}
+.contactUsPage .enquiries .enqTitles {
+  display: flex;
+  justify-content: space-around;
+}
+.contactUsPage .enquiries .enqTitles .enquiriesItem h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  color: #261b6c;
+}
+.contactUsPage .enquiries .enqTitles .enquiriesItem p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  text-decoration-line: underline;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.contactUsPage .emailUs {
+  padding: 10% 0 2% 0;
+}
+.contactUsPage .emailUs h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 73px;
+  color: #261b6c;
+}
+.contactUsPage .emailUs p {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #261b6c;
+  opacity: 0.8;
+}
+.contactUsPage .emailUs .container {
+  padding: 0 5%;
+}
+.contactUsPage .emailUs .container .row .formItem {
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 100%;
+  line-height: 30px;
+}
+.contactUsPage .emailUs .container .row .formItem select {
+  padding: 13px;
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 100%;
+  line-height: 30px;
+  background-color: #f7f5e8;
+  border: none;
+  color: gray;
+}
+.contactUsPage .emailUs .container .row .formItem .form-floating {
+  font-family: "Avenir LT Std";
+}
+.contactUsPage .emailUs .container .row .formItem .form-floating input {
+  background-color: #f7f5e8;
+  border: none;
+  color: gray;
+}
+.contactUsPage .emailUs .container .row .formItem .form-floating label {
+  color: gray;
+}
+.contactUsPage .emailUs .container .row .formItem .form-floating textarea {
+  background-color: #f7f5e8;
+  border: none;
+  padding-bottom: 15%;
+}
+.contactUsPage .emailUs .container .row .formItem .form-floating .form-control:focus {
+  box-shadow: 0 0 0 0.25rem #b2904c;
+}
+.contactUsPage .emailUs .container .row .formItem .form-select:focus {
+  box-shadow: 0 0 0 0.25rem #b2904c;
+}
+.contactUsPage .emailUs .container .row .formItem button {
+  width: 100%;
+  background: #b2904c;
+  border-radius: 5px;
+  font-family: "Avenir LT Std";
+  font-style: normal;
+  font-weight: 750;
+  font-size: 20px;
+  color: white;
+  line-height: 34px;
+}
+
+@media screen and (max-width: 408px) {
+  nav .innerNav {
+    display: flex;
+  }
+  nav .innerNav .navbar-brand img {
+    width: 50%;
+  }
+  nav .innerNav ul {
+    flex-direction: column;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 3% 0;
+  }
+  nav .innerNav ul li {
+    margin: 0 0 0 6px;
+  }
+  nav .innerNav ul li a {
+    color: #261b6c;
+    font-family: "AvenirHeavy";
+    font-weight: 750;
+    font-size: 20px;
+    line-height: 41px;
+  }
+  nav .innerNav ul li:nth-child(5) {
+    background-color: rgb(202, 166, 82);
+    padding: 0px 30px;
+    width: 64%;
+    border-radius: 4px;
+  }
+  nav .innerNav ul li:nth-child(5) a {
+    color: white;
+  }
+  nav button {
+    position: absolute;
+    top: 33px;
+    right: 13px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .homePage {
+    padding: 0;
+  }
+  .homePage .banner {
+    padding: 10% 0;
+  }
+  .homePage .banner .innerBanner {
+    padding: 0;
+  }
+  .homePage .banner .innerBanner .bannerItem {
+    text-align: center;
+    margin-left: 11px;
+  }
+  .homePage .banner .innerBanner .bannerItem h1 {
+    margin: 0 0 0 0;
+    font-size: 39px;
+  }
+  .homePage .banner .innerBanner .bannerItem p {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .homePage .banner .innerBanner .bannerImages {
+    margin-top: 4%;
+    display: none;
+  }
+  .homePage .banner .innerBanner .bannerImages img:nth-child(1) {
+    margin: 0;
+  }
+  .homePage .aboutBakerInn {
+    text-align: center;
+  }
+  .homePage .aboutBakerInn .innerAboutBakersInn {
+    padding: 0;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn {
+    margin: 0;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem h2 {
+    font-size: 28px;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 .btn {
+    font-size: 15px;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutImages .AboutBakerInnImages img {
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .homePage .ourProducts {
+    padding: 10% 0;
+  }
+  .homePage .ourProducts h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 73px;
+    color: #261b6c;
+  }
+  .homePage .ourProducts .OuterOurProducts .innerOurProducts .ourProductsImages img {
+    height: auto;
+  }
+  .homePage .ourProducts .OuterOurProducts .btn {
+    font-size: 14px;
+  }
+  .homePage .bookATour {
+    text-align: center;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem p {
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem h2 {
+    width: 100%;
+    font-size: 28px;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem button {
+    font-size: 14px;
+  }
+  .homePage .donationReq {
+    text-align: center;
+    padding: 10% 0;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 h2 {
+    font-size: 30px;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 button {
+    font-size: 14px;
+  }
+  .homePage .kidsCorner .container-fluid {
+    padding: 15% 8px;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 .kidsImage img {
+    display: none;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 h2 {
+    font-size: 78px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 p {
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 .btn {
+    font-size: 14px;
+  }
+  .homePage .bakersRecipes .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .homePage .bakersRecipes .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard {
+    margin-bottom: 20px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body h5 {
+    font-size: 22px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p {
+    font-size: 12px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn {
+    padding: 8px;
+    width: 21%;
+    margin: -55px 0 0 0;
+  }
+  .homePage .getNotified {
+    padding: 5% 0;
+    margin: 25% 0;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 0;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem .d-flex img {
+    display: none;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem .input-group input {
+    padding: 12px;
+  }
+  .aboutUs .aboutBanner h1 {
+    top: 128px;
+    font-size: 25px;
+  }
+  .aboutUs .ourVisions .outerVisions .innerOurVisions .ourVisionItem .d-flex .missionText h2 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .aboutUs .ourCoreValues h2 {
+    font-size: 27px;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body h5 {
+    font-size: 28px;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body p {
+    line-height: 1;
+  }
+  .aboutUs .aboutCeo {
+    padding: 20% 0;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd {
+    text-align: center;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd h2 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd p {
+    line-height: 1.5;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature {
+    text-align: center !important;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p {
+    font-size: 30px;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p span {
+    font-size: 18px;
+  }
+  .productsPage .productsBanner h1 {
+    top: 123px;
+    font-size: 14px;
+  }
+  .productsPage .ourProducts {
+    padding: 10% 0;
+  }
+  .productsPage .ourProducts h2 {
+    font-size: 30px;
+  }
+  .productsPage .ourProducts .innerOurProducts .ourProductsImages img {
+    height: auto;
+  }
+  .productsPage .ourProducts .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .productsPage .ourProducts .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .productsPage .ourProducts .content-tabs {
+    padding: 0;
+  }
+  .productsPage .ourProducts .content-tabs .active-content .outerBread .innerBread .card {
+    margin-left: 0;
+  }
+  .bakersRecipes .outerBakersRec h2 {
+    font-size: 27px;
+  }
+  .bakersRecipes .outerBakersRec .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .bakersRecipes .outerBakersRec .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard {
+    margin-bottom: 20px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body h5 {
+    font-size: 22px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p {
+    font-size: 12px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn {
+    padding: 8px;
+    width: 21%;
+    margin: -55px 0 0 0;
+  }
+  .kidsBanner .row {
+    flex-flow: column-reverse;
+  }
+  .kidsBanner .kidsItem img {
+    width: 100%;
+    margin: 0;
+  }
+  .kidsBanner .kidsItem2 img {
+    width: 100%;
+    margin: 0 0 0;
+  }
+  .games {
+    text-align: center;
+  }
+  .games .gameBackground {
+    padding: 5% 0;
+  }
+  .games .gameBackground .row {
+    flex-direction: column-reverse;
+  }
+  .games p {
+    padding: 0;
+  }
+  .contactUsPage .contactUsBanner h1 {
+    top: 123px;
+    font-size: 14px;
+  }
+  .contactUsPage .contactAddresses .outerContact {
+    padding: 18% 5%;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact {
+    padding: 0;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem {
+    text-align: center;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem h3 {
+    font-size: 20px;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem p {
+    font-size: 15px;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem .voip {
+    margin-bottom: 15px;
+  }
+  .contactUsPage .depots .outerDepots h1 {
+    font-size: 20px;
+  }
+  .contactUsPage .depots .outerDepots .innerDeports .depotsItem .titleBorder h3 {
+    font-size: 13px;
+  }
+  .contactUsPage .depots .outerDepots .innerDeports .depotsItem .locationBorder p {
+    font-size: 10px;
+  }
+  .contactUsPage .enquiries {
+    text-align: center;
+  }
+  .contactUsPage .enquiries .enqTitles {
+    flex-direction: column;
+  }
+  .contactUsPage .enquiries .enqTitles .enquiriesItem h3 {
+    font-size: 15px;
+  }
+  .contactUsPage .emailUs h2 {
+    font-size: 2;
+  }
+  footer {
+    padding: 0 0 5% 0;
+  }
+  footer .outerFooter .innerFooter {
+    justify-content: space-between;
+  }
+  footer .copyright {
+    display: block;
+    margin-top: 30px;
+  }
+  footer .copyright .d-flex p {
+    line-height: 34px;
+  }
+  footer .copyright p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 575px) and (max-width: 766px) {
+  .homePage {
+    padding: 0;
+  }
+  .homePage .banner {
+    padding: 10% 0;
+  }
+  .homePage .banner .innerBanner {
+    padding: 0;
+  }
+  .homePage .banner .innerBanner .bannerItem {
+    text-align: center;
+    margin-left: 11px;
+  }
+  .homePage .banner .innerBanner .bannerItem h1 {
+    margin: 0 0 0 0;
+    font-size: 39px;
+  }
+  .homePage .banner .innerBanner .bannerItem p {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .homePage .banner .innerBanner .bannerImages {
+    margin-top: 4%;
+    display: none;
+  }
+  .homePage .banner .innerBanner .bannerImages img:nth-child(1) {
+    margin: 0;
+  }
+  .homePage .aboutBakerInn {
+    text-align: center;
+  }
+  .homePage .aboutBakerInn .innerAboutBakersInn {
+    padding: 0;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn {
+    margin: 0;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem h2 {
+    font-size: 30px;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 .btn {
+    font-size: 15px;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutImages .AboutBakerInnImages img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .homePage .ourProducts {
+    padding: 10% 0;
+  }
+  .homePage .ourProducts h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 73px;
+    color: #261b6c;
+  }
+  .homePage .ourProducts .OuterOurProducts .btn {
+    font-size: 14px;
+  }
+  .homePage .ourProducts .OuterOurProducts .innerOurProducts .ourProductsImages img {
+    height: auto;
+  }
+  .homePage .bookATour {
+    text-align: center;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem p {
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem button {
+    font-size: 14px;
+  }
+  .homePage .donationReq {
+    text-align: center;
+    padding: 10% 0;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 h2 {
+    font-size: 30px;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 button {
+    font-size: 14px;
+  }
+  .homePage .kidsCorner .container-fluid {
+    padding: 15% 8px;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 .kidsImage img {
+    display: none;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 h2 {
+    font-size: 78px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 p {
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 .btn {
+    font-size: 14px;
+  }
+  .homePage .bakersRecipes .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .homePage .bakersRecipes .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard {
+    margin-bottom: 20px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body h5 {
+    font-size: 22px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p {
+    font-size: 12px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn {
+    padding: 8px;
+    width: 21%;
+    margin: -55px 0 0 0;
+  }
+  .homePage .getNotified {
+    padding: 5% 0;
+    margin: 25% 0;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 0;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem .d-flex img {
+    display: none;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem .input-group input {
+    padding: 12px;
+  }
+  .aboutUs .aboutBanner h1 {
+    top: 198px;
+    font-size: 25px;
+  }
+  .aboutUs .ourVisions .outerVisions .innerOurVisions .ourVisionItem .d-flex .missionText h2 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .aboutUs .ourCoreValues h2 {
+    font-size: 27px;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body h5 {
+    font-size: 28px;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body p {
+    line-height: 1;
+  }
+  .aboutUs .aboutCeo {
+    padding: 20% 0;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd {
+    text-align: center;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd h2 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd p {
+    line-height: 1.5;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature {
+    text-align: center !important;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p {
+    font-size: 30px;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p span {
+    font-size: 18px;
+  }
+  .productsPage .productsBanner h1 {
+    top: 198px;
+    font-size: 21px;
+  }
+  .productsPage .ourProducts {
+    padding: 10% 0;
+  }
+  .productsPage .ourProducts h2 {
+    font-size: 30px;
+  }
+  .productsPage .ourProducts .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .productsPage .ourProducts .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .productsPage .ourProducts .content-tabs {
+    padding: 0;
+  }
+  .productsPage .ourProducts .content-tabs .active-content .outerBread .innerBread .card {
+    margin-left: 0;
+  }
+  .bakersRecipes .outerBakersRec h2 {
+    font-size: 27px;
+  }
+  .bakersRecipes .outerBakersRec .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .bakersRecipes .outerBakersRec .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard {
+    margin-bottom: 20px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body h5 {
+    font-size: 22px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p {
+    font-size: 12px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn {
+    padding: 8px;
+    width: 21%;
+    margin: -55px 0 0 0;
+  }
+  .kidsBanner .row {
+    flex-flow: column-reverse;
+  }
+  .kidsBanner .kidsItem img {
+    width: 100%;
+    margin: 0;
+  }
+  .kidsBanner .kidsItem2 img {
+    width: 100%;
+    margin: 0 0 0;
+  }
+  .games {
+    text-align: center;
+  }
+  .games .gameBackground {
+    padding: 5% 0;
+  }
+  .games .gameBackground .row {
+    flex-direction: column-reverse;
+  }
+  .games p {
+    padding: 0;
+  }
+  .contactUsPage .contactUsBanner h1 {
+    top: 198px;
+    font-size: 21px;
+  }
+  .contactUsPage .contactAddresses .outerContact {
+    padding: 18% 5%;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact {
+    padding: 0;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem {
+    text-align: center;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem h3 {
+    font-size: 20px;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem p {
+    font-size: 15px;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem .voip {
+    margin-bottom: 15px;
+  }
+  .contactUsPage .depots .outerDepots h1 {
+    font-size: 20px;
+  }
+  .contactUsPage .depots .outerDepots .innerDeports .depotsItem .titleBorder h3 {
+    font-size: 13px;
+  }
+  .contactUsPage .depots .outerDepots .innerDeports .depotsItem .locationBorder p {
+    font-size: 10px;
+  }
+  .contactUsPage .enquiries {
+    text-align: center;
+  }
+  .contactUsPage .enquiries .enqTitles {
+    flex-direction: column;
+  }
+  .contactUsPage .enquiries .enqTitles .enquiriesItem h3 {
+    font-size: 15px;
+  }
+  .contactUsPage .emailUs h2 {
+    font-size: 2;
+  }
+  footer {
+    padding: 0 0 5% 0;
+  }
+  footer .outerFooter .innerFooter {
+    justify-content: space-between;
+  }
+  footer .copyright {
+    display: block;
+    margin-top: 30px;
+  }
+  footer .copyright .d-flex p {
+    line-height: 34px;
+  }
+  footer .copyright p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav .innerNav .navbar-brand img {
+    width: 80%;
+  }
+  nav .innerNav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  nav .innerNav ul li {
+    margin: 0 15px;
+  }
+  nav .innerNav ul li a {
+    color: #261b6c;
+    font-family: "AvenirHeavy";
+    font-weight: 750;
+    font-size: 20px;
+    line-height: 41px;
+  }
+  nav .innerNav ul li:nth-child(5) {
+    background-color: rgb(202, 166, 82);
+    padding: 0px 30px;
+    border-radius: 4px;
+  }
+  nav .innerNav ul li:nth-child(5) a {
+    color: white;
+  }
+  nav .btn {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+  .homePage {
+    padding: 0;
+  }
+  .homePage .banner {
+    padding: 10% 0;
+  }
+  .homePage .banner .innerBanner {
+    padding: 0;
+  }
+  .homePage .banner .innerBanner .bannerItem {
+    text-align: center;
+    margin-left: 11px;
+  }
+  .homePage .banner .innerBanner .bannerItem h1 {
+    margin: 0 0 0 0;
+    font-size: 31px;
+  }
+  .homePage .banner .innerBanner .bannerItem p {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .homePage .banner .innerBanner .bannerImages {
+    margin-top: 4%;
+    display: none;
+  }
+  .homePage .banner .innerBanner .bannerImages img:nth-child(1) {
+    margin: 0;
+  }
+  .homePage .aboutBakerInn .innerAboutBakersInn {
+    padding: 0;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn {
+    margin: 0;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem h2 {
+    font-size: 30px;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 p {
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 .btn {
+    font-size: 15px;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutImages .AboutBakerInnImages img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .homePage .ourProducts {
+    padding: 10% 0;
+  }
+  .homePage .ourProducts h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 73px;
+    color: #261b6c;
+  }
+  .homePage .ourProducts .OuterOurProducts .btn {
+    font-size: 14px;
+  }
+  .homePage .ourProducts .OuterOurProducts .innerOurProducts .ourProductsImages img {
+    height: auto;
+  }
+  .homePage .bookATour {
+    text-align: center;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour {
+    flex-direction: row;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem p {
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem button {
+    font-size: 14px;
+  }
+  .homePage .donationReq {
+    text-align: center;
+    padding: 10% 0;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 h2 {
+    font-size: 30px;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 button {
+    font-size: 14px;
+  }
+  .homePage .kidsCorner .container-fluid {
+    padding: 15% 8px;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 .kidsImage img {
+    display: none;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 h2 {
+    font-size: 78px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 p {
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 .btn {
+    font-size: 14px;
+  }
+  .homePage .bakersRecipes .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .homePage .bakersRecipes .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard {
+    margin-bottom: 20px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body h5 {
+    font-size: 15px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p {
+    font-size: 10px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn {
+    padding: 8px;
+    width: 21%;
+    margin: -55px 0 0 0;
+  }
+  .homePage .getNotified {
+    padding: 5% 0;
+    margin: 0 0 8% 0;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 0;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem .d-flex img {
+    display: none;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem .input-group input {
+    padding: 12px;
+  }
+  .aboutUs .aboutBanner h1 {
+    top: 286px;
+    font-size: 25px;
+  }
+  .aboutUs .ourVisions .outerVisions .innerOurVisions .ourVisionItem .d-flex .missionText h2 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .aboutUs .ourCoreValues h2 {
+    font-size: 27px;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreValueitem:nth-child(4) {
+    margin: 0;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreValueitem:nth-child(5) {
+    margin: 0;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body h5 {
+    font-size: 28px;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body p {
+    line-height: 1;
+  }
+  .aboutUs .aboutCeo {
+    padding: 20% 0;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd {
+    text-align: center;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd h2 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd p {
+    line-height: 1.5;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature {
+    text-align: center !important;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p {
+    font-size: 30px;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p span {
+    font-size: 18px;
+  }
+  .productsPage .productsBanner h1 {
+    top: 286px;
+    font-size: 21px;
+  }
+  .productsPage .ourProducts {
+    padding: 10% 0;
+  }
+  .productsPage .ourProducts h2 {
+    font-size: 30px;
+  }
+  .productsPage .ourProducts .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .productsPage .ourProducts .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .productsPage .ourProducts .content-tabs {
+    padding: 0;
+  }
+  .bakersRecipes .outerBakersRec h2 {
+    font-size: 27px;
+  }
+  .bakersRecipes .outerBakersRec .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .bakersRecipes .outerBakersRec .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard {
+    margin-bottom: 20px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body h5 {
+    font-size: 15px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p {
+    font-size: 12px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn {
+    padding: 8px;
+    width: 21%;
+    margin: -55px 0 0 0;
+  }
+  .kidsBanner .row {
+    flex-flow: column-reverse;
+  }
+  .kidsBanner .kidsItem img {
+    width: 100%;
+    margin: 0;
+  }
+  .kidsBanner .kidsItem2 img {
+    width: 100%;
+    margin: 0 0 0;
+  }
+  .games {
+    text-align: center;
+  }
+  .games .gameBackground {
+    padding: 5% 0;
+  }
+  .games .gameBackground .row {
+    flex-direction: column-reverse;
+  }
+  .games .gameBackground .row .gameItem img {
+    width: 90%;
+  }
+  .games p {
+    padding: 0;
+  }
+  .contactUsPage .contactUsBanner h1 {
+    top: 286px;
+    font-size: 21px;
+  }
+  .contactUsPage .contactAddresses .outerContact {
+    padding: 18% 5%;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact {
+    padding: 0;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem {
+    text-align: center;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem h3 {
+    font-size: 20px;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem p {
+    font-size: 15px;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem .voip {
+    margin-bottom: 15px;
+  }
+  .contactUsPage .depots .outerDepots h1 {
+    font-size: 20px;
+  }
+  .contactUsPage .depots .outerDepots .innerDeports .depotsItem .titleBorder h3 {
+    font-size: 13px;
+  }
+  .contactUsPage .depots .outerDepots .innerDeports .depotsItem .locationBorder p {
+    font-size: 10px;
+  }
+  .contactUsPage .enquiries {
+    text-align: center;
+  }
+  .contactUsPage .enquiries .enqTitles {
+    flex-direction: row;
+  }
+  .contactUsPage .enquiries .enqTitles .enquiriesItem h3 {
+    font-size: 15px;
+  }
+  .contactUsPage .emailUs h2 {
+    font-size: 2;
+  }
+  footer {
+    padding: 0 0 5% 0;
+  }
+  footer .outerFooter .innerFooter {
+    justify-content: space-between;
+  }
+  footer .copyright {
+    display: block;
+    margin-top: 30px;
+  }
+  footer .copyright .d-flex p {
+    line-height: 34px;
+  }
+  footer .copyright p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav .innerNav .navbar-brand img {
+    width: 80%;
+  }
+  nav .innerNav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  nav .innerNav ul li {
+    margin: 0 15px;
+  }
+  nav .innerNav ul li a {
+    color: #261b6c;
+    font-family: "AvenirHeavy";
+    font-weight: 750;
+    font-size: 16px;
+    line-height: 41px;
+  }
+  nav .innerNav ul li:nth-child(5) {
+    background-color: rgb(202, 166, 82);
+    padding: 0px 30px;
+    border-radius: 4px;
+  }
+  nav .innerNav ul li:nth-child(5) a {
+    color: white;
+  }
+  nav .btn {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+  .homePage {
+    padding: 0;
+  }
+  .homePage .banner {
+    padding: 10% 0;
+  }
+  .homePage .banner .innerBanner {
+    padding: 0;
+  }
+  .homePage .banner .innerBanner .bannerItem {
+    text-align: center;
+    margin-left: 11px;
+  }
+  .homePage .banner .innerBanner .bannerItem h1 {
+    margin: 0 0 0 0;
+    font-size: 31px;
+  }
+  .homePage .banner .innerBanner .bannerItem p {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .homePage .banner .innerBanner .bannerImages {
+    margin-top: 4%;
+    display: none;
+  }
+  .homePage .banner .innerBanner .bannerImages img:nth-child(1) {
+    margin: 0;
+  }
+  .homePage .aboutBakerInn .innerAboutBakersInn {
+    padding: 0;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn {
+    margin: 0;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem h2 {
+    font-size: 30px;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 p {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutBakerInnItem2 .btn {
+    font-size: 15px;
+  }
+  .homePage .aboutBakerInn .outerAboutBakerInn .AboutImages .AboutBakerInnImages img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .homePage .ourProducts {
+    padding: 10% 0;
+  }
+  .homePage .ourProducts h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 73px;
+    color: #261b6c;
+  }
+  .homePage .ourProducts .OuterOurProducts .btn {
+    font-size: 14px;
+  }
+  .homePage .ourProducts .OuterOurProducts .innerOurProducts .ourProductsImages img {
+    height: auto;
+  }
+  .homePage .bookATour {
+    text-align: center;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour {
+    flex-direction: row;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem p {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: start;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .homePage .bookATour .outerBookTour .innerBookTour .bookTourItem button {
+    font-size: 14px;
+  }
+  .homePage .donationReq {
+    text-align: center;
+    padding: 10% 0;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 h2 {
+    font-size: 30px;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 p {
+    font-size: 20px;
+    text-align: start;
+    line-height: 1.5;
+  }
+  .homePage .donationReq .container-fluid .row .col-lg-6 button {
+    font-size: 14px;
+  }
+  .homePage .kidsCorner .container-fluid {
+    padding: 15% 8px;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 .kidsImage img {
+    display: none;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 h2 {
+    font-size: 78px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 p {
+    text-align: start;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .homePage .kidsCorner .container-fluid .row .col-lg-6 .btn {
+    font-size: 14px;
+  }
+  .homePage .bakersRecipes .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .homePage .bakersRecipes .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard {
+    margin-bottom: 20px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body h5 {
+    font-size: 15px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p {
+    font-size: 10px;
+  }
+  .homePage .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn {
+    padding: 8px;
+    width: 21%;
+    margin: -55px 0 0 0;
+  }
+  .homePage .getNotified {
+    padding: 5% 0;
+    margin: 0 0 8% 0;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 0;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem .d-flex img {
+    display: none;
+  }
+  .homePage .getNotified .outerGetNot .innerrGetNot .getNotItem .input-group input {
+    padding: 12px;
+  }
+  .aboutUs .aboutBanner h1 {
+    top: 382px;
+    font-size: 36px;
+  }
+  .aboutUs .ourVisions .outerVisions .innerOurVisions .ourVisionItem .d-flex .missionText h2 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .aboutUs .ourCoreValues h2 {
+    font-size: 27px;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreValueitem:nth-child(4) {
+    margin: 0;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreValueitem:nth-child(5) {
+    margin: 0;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body h5 {
+    font-size: 28px;
+  }
+  .aboutUs .ourCoreValues .outerCoreValues .coreCards .card .card-body p {
+    line-height: 1;
+  }
+  .aboutUs .aboutCeo {
+    padding: 20% 0;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd {
+    text-align: center;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd h2 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd p {
+    line-height: 1.5;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature {
+    text-align: center !important;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p {
+    font-size: 30px;
+  }
+  .aboutUs .aboutCeo .outerAboutCeo .innerAboutCeo .AboutCeoItem .ceoPadd .ceoSignature p span {
+    font-size: 18px;
+  }
+  .productsPage .productsBanner h1 {
+    top: 382px;
+    font-size: 36px;
+  }
+  .productsPage .ourProducts {
+    padding: 10% 0;
+  }
+  .productsPage .ourProducts h2 {
+    font-size: 30px;
+  }
+  .productsPage .ourProducts .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .productsPage .ourProducts .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .productsPage .ourProducts .content-tabs {
+    padding: 0;
+  }
+  .bakersRecipes .outerBakersRec h2 {
+    font-size: 27px;
+  }
+  .bakersRecipes .outerBakersRec .bloc-tabs .tabs {
+    padding: 0 0 0 18px;
+  }
+  .bakersRecipes .outerBakersRec .bloc-tabs .tabs li {
+    font-size: 14px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard {
+    margin-bottom: 20px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body h5 {
+    font-size: 15px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body p {
+    font-size: 12px;
+  }
+  .bakersRecipes .outerBakersRec .content-tabs .active-content .bakercard .card .card-body .btn {
+    padding: 8px;
+    width: 21%;
+    margin: -55px 0 0 0;
+  }
+  .kidsBanner {
+    padding: 5% 0 0 0;
+  }
+  .kidsBanner .row {
+    flex-flow: column-reverse;
+  }
+  .kidsBanner .kidsItem img {
+    width: 100%;
+    margin: 0;
+  }
+  .kidsBanner .kidsItem2 {
+    display: none;
+  }
+  .kidsBanner .kidsItem2 img {
+    width: 100%;
+    margin: 0 0 0;
+  }
+  .contactUsPage .contactUsBanner h1 {
+    top: 382px;
+    font-size: 36px;
+  }
+  .contactUsPage .contactAddresses .outerContact {
+    padding: 18% 5%;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact {
+    padding: 0;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem {
+    text-align: center;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem h3 {
+    font-size: 20px;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem p {
+    font-size: 15px;
+  }
+  .contactUsPage .contactAddresses .outerContact .innerContact .contactAdresssItem .voip {
+    margin-bottom: 15px;
+  }
+  .contactUsPage .depots .outerDepots h1 {
+    font-size: 20px;
+  }
+  .contactUsPage .depots .outerDepots .innerDeports .depotsItem .titleBorder h3 {
+    font-size: 13px;
+  }
+  .contactUsPage .depots .outerDepots .innerDeports .depotsItem .locationBorder p {
+    font-size: 10px;
+  }
+  .contactUsPage .enquiries {
+    text-align: center;
+  }
+  .contactUsPage .enquiries .enqTitles {
+    flex-direction: row;
+  }
+  .contactUsPage .enquiries .enqTitles .enquiriesItem h3 {
+    font-size: 15px;
+  }
+  .contactUsPage .emailUs h2 {
+    font-size: 2;
+  }
+}/*# sourceMappingURL=index.css.map */

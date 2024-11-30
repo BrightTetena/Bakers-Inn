@@ -1,0 +1,3849 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --bodyColor: "green";
+}
+
+@font-face {
+  font-family: "InterRegular";
+  src: url("./assets/fonts/InterRegular.ttf");
+}
+
+@font-face {
+  font-family: "InterBold";
+  src: url("./assets/fonts/InterBold.ttf");
+}
+
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("./assets/fonts/AvenirHeavy.otf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat.ttf");
+}
+
+@font-face {
+  font-family: "AvenirLight";
+  src: url("./assets/fonts/AvenirLight.otf");
+}
+
+// .app{
+//   border-top:60px  solid #B2904C;
+//   border-bottom:60px  solid #B2904C;
+//   border-left:60px  solid #B2904C;
+//   border-right:60px  solid #B2904C;
+// }
+.app {
+  .loader {
+    display: flex;
+    flex-direction: column;
+  }
+}
+nav {
+  .innerNav {
+    .navbar-brand {
+      img {
+        width: 80%;
+      }
+    }
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        margin: 0 15px;
+
+        a {
+          color: #261b6c;
+          font-family: "AvenirHeavy";
+          font-weight: 750;
+          font-size: 20px;
+          line-height: 41px;
+        }
+      }
+
+      li:nth-child(5) {
+        background-color: rgb(202, 166, 82);
+        padding: 0px 30px;
+        border-radius: 4px;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .btn {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+.homePage {
+  padding: 0 12px;
+
+  .banner {
+    background-image: url("./assets/images/Rectangle01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    .innerBanner {
+      padding: 5%;
+      .bannerItem {
+        h1 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 41px;
+          line-height: 60px;
+          color: white;
+          margin-top: 36%;
+          span {
+            border-bottom: #b2904c 5px solid;
+          }
+        }
+
+        p {
+          color: white;
+          font-family: "AvenirLight";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        .btn {
+          background-color: rgb(202, 166, 82);
+          padding: 10px 60px;
+          border-radius: 5px;
+          color: white;
+
+          font-family: "AvenirHeavy";
+          font-style: normal;
+          font-weight: 750;
+          font-size: 28px;
+          line-height: 34px;
+          text-align: center;
+        }
+      }
+      .bannerImages {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 50%;
+          margin-left: -28%;
+        }
+
+        img:nth-child(1) {
+          margin-left: 28%;
+          width: 50%;
+        }
+
+        // img:nth-child(3) {
+        //   margin-left: -28%;
+        //   width: 50%;
+        // }
+
+        // img:nth-child(4) {
+        //   margin-left: -28%;
+        //   width: 50%;
+        // }
+      }
+    }
+  }
+}
+
+.aboutBakerInn {
+  padding: 10% 0;
+
+  .outerAboutBakerInn {
+    .AboutBakerInnItem {
+      h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 73px;
+        color: #261b6c;
+      }
+    }
+
+    .AboutBakerInnItem2 {
+      p {
+        font-family: "AvenirLight";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+        color: #261b6c;
+        opacity: 0.8;
+      }
+
+      .btn {
+        background-color: rgb(202, 166, 82);
+        padding: 10px 60px;
+        border-radius: 5px;
+        color: white;
+        margin: 0 0 10% 0;
+        font-family: "AvenirHeavy";
+        font-style: normal;
+        font-weight: 750;
+        font-size: 26px;
+        line-height: 34px;
+        text-align: center;
+      }
+    }
+  }
+
+  .AboutBakerInnImages {
+    img {
+      height: 334px;
+    }
+  }
+}
+
+.ourProducts {
+  padding: 5% 0;
+  background: #f8f8f8;
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 73px;
+    color: #261b6c;
+  }
+  .OuterOurProducts {
+    text-align: center;
+
+    .btn {
+      background: #b2904c;
+      border-radius: 5px;
+      padding: 15px 60px;
+      font-size: 26px;
+      line-height: 34px;
+      font-family: "AvenirHeavy";
+      font-weight: 750;
+      color: #ffffff;
+    }
+
+    .innerOurProducts {
+      padding: 0 0 5% 0;
+
+      .ourProductsImages {
+        position: relative;
+
+        img {
+          height: 334px;
+        }
+
+        h3 {
+          position: absolute;
+          bottom: 0;
+          left: 53px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.bookATour {
+  padding: 10% 0;
+
+  .outerBookTour {
+    .innerBookTour {
+      align-items: center;
+
+      .bookTourItem {
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 73px;
+          color: #261b6c;
+          width: 110%;
+        }
+
+        p {
+          font-family: "AvenirLight";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 34px;
+          color: #261b6c;
+          opacity: 0.8;
+          padding: 0 13% 0 0;
+        }
+
+        .btn {
+          background: #b2904c;
+          border-radius: 5px;
+          font-family: "AvenirHeavy";
+          font-style: normal;
+          font-weight: 750;
+          color: white;
+          font-size: 26px;
+          line-height: 34px;
+          padding: 15px 60px;
+        }
+        .BookModal {
+          .modal {
+            background-color: #f7f5e8;
+            .modal-dialog {
+              .modal-content {
+                padding: 5% 0;
+                border: none;
+                background-color: white;
+                h5 {
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 800;
+                  font-size: 40px;
+                  line-height: 73px;
+                  color: #261b6c;
+                }
+                .btn-close {
+                  position: absolute;
+                  right: 22px;
+                  top: 17px;
+                  padding: 15px;
+                  border-radius: 80px;
+                  background-color: #261b6c;
+                }
+                .modal-body {
+                  .modalForms {
+                    .modalFormItems {
+                      .form-floating {
+                        .form-control {
+                          border: none;
+                          background-color: #f7f5e8;
+                          color: blue;
+                        }
+                        .date {
+                          color: #261b6c;
+                        }
+                      }
+                      .form-select {
+                        padding: 1rem 0.75rem;
+                        border: none;
+                        background-color: #f7f5e8;
+                      }
+                      .form-check {
+                        .form-check-input {
+                          border: none;
+                          background-color: #f7f5e8;
+                          padding: 12px;
+                        }
+                        .form-check-input:focus {
+                          box-shadow: #b2904c;
+                        }
+                        .form-check-label {
+                          margin-left: 10px;
+                        }
+                        .form-check-input:checked {
+                          background-color: #261b6c;
+                          color: #261b6c;
+                        }
+                      }
+                      p {
+                        font-family: "AvenirLight";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 34px;
+                        color: #261b6c;
+                        opacity: 0.8;
+                        padding: 2% 0;
+                        span {
+                          font-family: "AvenirHeavy";
+                          margin-left: 5px;
+                        }
+                      }
+                      .form-check-label {
+                        font-family: "AvenirLight";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: #261b6c;
+                        opacity: 0.8;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.donationReq {
+  padding: 10% 0;
+  background: #f8f8f8;
+  .container-fluid {
+    .row {
+      align-items: center;
+
+      .col-lg-6 {
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 73px;
+          color: #261b6c;
+        }
+
+        p {
+          font-family: "AvenirLight";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 34px;
+          color: #261b6c;
+          opacity: 0.8;
+        }
+
+        button {
+          background: #b2904c;
+          border-radius: 5px;
+          font-family: "AvenirHeavy";
+          font-style: normal;
+          font-weight: 750;
+          color: white;
+          padding: 15px 60px;
+          font-size: 26px;
+          line-height: 34px;
+        }
+        .donationModal {
+          .modal {
+            background-color: #f7f5e8;
+            .modal-dialog {
+              .modal-content {
+                padding: 5% 0;
+                border: none;
+                background-color: white;
+
+                .modalText {
+                  h5 {
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 40px;
+                    color: #261b6c;
+                  }
+                  p {
+                    font-family: "AvenirLight";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: #261b6c;
+                    opacity: 0.8;
+                    padding: 2% 8%;
+                  }
+                }
+                .btn-close {
+                  position: absolute;
+                  right: 22px;
+                  top: 17px;
+                  padding: 15px;
+                  border-radius: 80px;
+                  background-color: #261b6c;
+                }
+                .modal-body {
+                  .modalForms {
+                    .formItem {
+                      .form-floating {
+                        .form-control {
+                          border: none;
+                          background-color: #f7f5e8;
+                          color: blue;
+                        }
+                      }
+                      .form-select {
+                        padding: 1rem 0.75rem;
+                        border: none;
+                        background-color: #f7f5e8;
+                      }
+                      .form-check {
+                        .form-check-input {
+                          border: none;
+                          background-color: #f7f5e8;
+                          padding: 12px;
+                        }
+                        .form-check-input:focus {
+                          box-shadow: #b2904c;
+                        }
+                        .form-check-label {
+                          margin-left: 10px;
+                        }
+                        .form-check-input:checked {
+                          background-color: #261b6c;
+                          color: #261b6c;
+                        }
+                      }
+
+                      .form-check-label {
+                        font-family: "AvenirLight";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: #261b6c;
+                        opacity: 0.8;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.kidsCorner {
+  padding: 15% 12px;
+
+  .container-fluid {
+    padding: 10% 0;
+    background-image: url("./assets/images/Rectangle01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: white;
+
+    .row {
+      .col-12 {
+        text-align: center;
+        .kidsImage {
+          position: relative;
+          img:nth-child(1) {
+            position: absolute;
+            top: -139px;
+            left: -51px;
+            width: 79%;
+          }
+          img:nth-child(2) {
+            position: absolute;
+            top: 238px;
+            left: -19px;
+            width: 30%;
+          }
+          img:nth-child(3) {
+            position: absolute;
+            top: 338px;
+            right: -44px;
+            width: 14%;
+          }
+          img:nth-child(4) {
+            position: absolute;
+            left: 28px;
+            top: -250px;
+
+            z-index: 2;
+          }
+        }
+        // .kidsText{
+        //   padding: 0 15%;
+        // }
+        h2 {
+          font-family: "3Dumb";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 95px;
+        }
+
+        p {
+          font-family: "AvenirLight";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          padding: 0 18%;
+
+          text-align: center;
+        }
+
+        .btn {
+          background: #ff4655;
+          border-radius: 5px;
+          font-family: "AvenirHeavy";
+          font-style: normal;
+          font-weight: 750;
+          color: white;
+          font-size: 26px;
+          line-height: 34px;
+          padding: 15px 60px;
+        }
+      }
+    }
+  }
+}
+
+.bakersRecipes {
+  padding: 0 0 10% 0;
+  background: white;
+
+  .outerBakersRec {
+    h2 {
+      text-align: center;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 73px;
+      color: #261b6c;
+    }
+
+    .bloc-tabs {
+      display: flex;
+      justify-content: center;
+
+      .tabs {
+        padding: 18px;
+        text-align: center;
+        cursor: pointer;
+
+        li {
+          list-style: none;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 49px;
+          color: #261b6c;
+        }
+      }
+
+      .active-tabs {
+        border-bottom: 5px solid #b2904c;
+      }
+    }
+
+    .content-tabs {
+      .content {
+        display: none;
+      }
+
+      .active-content {
+        display: block;
+
+        .bakercard {
+          .card {
+            padding-bottom: -1%;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+
+            img {
+              padding: 5px 5px 0 5px;
+            }
+
+            .card-body {
+              h5 {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 900;
+                font-size: 28px;
+                line-height: 43px;
+                color: #261b6c;
+                margin-bottom: 15px;
+              }
+
+              p {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 15px;
+                line-height: 23px;
+                color: #261b6c;
+                margin: 5px 0;
+
+                span {
+                  margin-left: 15px;
+                  color: #b2904c;
+                }
+
+                .cardPeople {
+                  margin-left: 40px;
+                }
+              }
+
+              .btn {
+                background-color: #b2904c;
+                border: none;
+                padding: 20px;
+                width: 73px;
+                height: auto;
+                margin: -60px 0 0 0;
+
+                .svg-icon path,
+                .svg-icon polygon,
+                .svg-icon rect {
+                  fill: #ffffff;
+                }
+
+                .svg-icon circle {
+                  stroke: #ffffff;
+                  stroke-width: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal {
+    background-color: #f7f5e8;
+    .modalContent {
+      background-color: #ffffff;
+      .modal-body {
+        .btn-close {
+          position: absolute;
+          right: 20px;
+        }
+        .modalItems {
+          .allImages {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // -moz-column-gap: 0.8rem;
+            // column-gap: 0.8rem;
+            // padding: 1rem;
+            .innerimage {
+              grid-column: 1;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              .image {
+                width: 100%;
+              }
+              .image:first-child {
+                grid-column: span 2;
+              }
+            }
+            .modalDetailsImage {
+              .heading {
+                .ingridTitle {
+                  .lineDot {
+                    width: 100%;
+                  }
+                }
+              }
+              .indridValues {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                small {
+                  font-family: "Avenir LT Std";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #261b6c;
+                  opacity: 0.8;
+                }
+              }
+              .steps {
+                .d-flex {
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                }
+                .stepTitleText {
+                  width: 50%;
+                  h5 {
+                    font-family: "Montserrat";
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #261b6c;
+                  }
+                  small {
+                    font-family: "Avenir LT Std";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #261b6c;
+                    opacity: 0.8;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.getNotified {
+  background-image: url("./assets/images/Promo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-bottom: 10%;
+
+  .outerGetNot {
+    .innerrGetNot {
+      .getNotItem {
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 40px;
+          margin-top: 24%;
+          width: 92%;
+          color: white;
+          margin-bottom: 3%;
+        }
+        .input-group {
+          input {
+            background: #c6a460;
+            border-radius: 7px;
+            border: none;
+            color: white;
+            padding: 25px;
+          }
+          .btn {
+            scale: 0.9;
+            background: #c6a460;
+            background-color: #261b6c;
+          }
+        }
+        .d-flex {
+          img {
+            width: 50%;
+          }
+          img:nth-child(2) {
+            margin-left: -29%;
+            width: 100%;
+          }
+          img:nth-child(3) {
+            margin-left: -29%;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #261b6c;
+  color: white;
+
+  .outerFooter {
+    .footerTopItem {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      .whiteBack {
+        width: 100%;
+        background-color: white;
+        height: 3px;
+      }
+    }
+    hr {
+      opacity: 1;
+    }
+
+    .innerFooter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 4% 0 0 0;
+
+      .footerItem {
+        h3 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 37px;
+        }
+
+        p {
+          font-family: "Avenir LT Std";
+          font-weight: 400;
+          font-size: 18px;
+          opacity: 0.8;
+          margin: 0;
+          line-height: 31px;
+        }
+
+        .instagramFeed {
+          div {
+            img {
+              max-width: 80%;
+            }
+          }
+        }
+        .socialIcons {
+          margin-top: 20px;
+          a {
+            color: #261b6c;
+            img {
+              margin: 5px;
+            }
+          }
+        }
+
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              font-family: "Avenir LT Std";
+              font-weight: 400;
+              font-size: 18px;
+              opacity: 0.8;
+              padding: 0;
+              line-height: 31px;
+            }
+          }
+        }
+      }
+    }
+
+    .footerItem:nth-child(2) {
+      margin-left: 0;
+    }
+
+    .footerItem:nth-child(3) {
+      margin-left: 0%;
+    }
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .d-flex {
+      p {
+        height: 0.5rem;
+      }
+      gap: 0.3rem;
+      align-items: center;
+      img {
+        margin-top: -14px;
+      }
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      font-family: "Avenir LT Std";
+
+      span {
+        color: #c6a460;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+// *** About Us Page styles *** //
+
+.aboutUs {
+  .aboutBanner {
+    position: relative;
+
+    img {
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 85px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+    }
+    .vectorLines {
+      position: absolute;
+      bottom: 0;
+      bottom: 33px;
+      right: 45px;
+    }
+  }
+
+  .ourVisions {
+    padding: 10% 0;
+
+    .outerVisions {
+      background: #f7f5e8;
+      border-radius: 10px;
+      padding: 8% 5%;
+
+      .innerOurVisions {
+        .ourVisionItem {
+          .d-flex {
+            margin-left: 10%;
+
+            .missionText {
+              margin-left: 6%;
+
+              h2 {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 67px;
+                color: #261b6c;
+              }
+
+              p {
+                font-family: "Avenir LT Std";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 1.5;
+                color: #261b6c;
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ourCoreValues {
+    background: #f8f8f8;
+    padding: 5% 0;
+
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 73px;
+      color: #261b6c;
+      text-align: center;
+    }
+
+    .outerCoreValues {
+      display: flex;
+
+      .coreValueitem:nth-child(4) {
+        margin-top: 5%;
+      }
+
+      .coreValueitem:nth-child(5) {
+        margin-top: 5%;
+      }
+
+      .coreCards {
+        .card {
+          border: none;
+          background: #f8f8f8;
+
+          img {
+            height: 385px;
+            border-radius: 7px;
+          }
+
+          .card-body {
+            h5 {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 800;
+              font-size: 30px;
+              line-height: 49px;
+              color: #261b6c;
+              margin: 5% 0;
+            }
+
+            .cardSecTitle {
+              p {
+                font-family: "Avenir LT Std";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 29px;
+                text-align: center;
+                color: #261b6c;
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aboutCeo {
+    padding: 5% 0;
+
+    .outerAboutCeo {
+      .innerAboutCeo {
+        .AboutCeoItem {
+          .ceoPadd {
+            margin: 10% 0;
+            h2 {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 800;
+              font-size: 40px;
+              line-height: 55px;
+              color: #261b6c;
+            }
+
+            p {
+              font-family: "Avenir LT Std";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 26px;
+              color: #261b6c;
+              opacity: 0.8;
+            }
+
+            .ceoSignature {
+              p {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 45px;
+                line-height: 55px;
+
+                span {
+                  font-family: "Bulgatti";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 45px;
+                  line-height: 77px;
+                  border-bottom: #261b6c 1px solid;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.productsPage {
+  .productsBanner {
+    position: relative;
+
+    img {
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 85px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+    }
+    .vectorLines {
+      position: absolute;
+      bottom: 0;
+      bottom: 33px;
+      right: 45px;
+    }
+  }
+
+  .ourProducts {
+    h2 {
+      text-align: center;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 73px;
+      color: #261b6c;
+    }
+
+    .bloc-tabs {
+      display: flex;
+      justify-content: center;
+
+      .tabs {
+        padding: 18px;
+        text-align: center;
+        cursor: pointer;
+
+        li {
+          list-style: none;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 49px;
+          color: #261b6c;
+        }
+      }
+
+      .active-tabs {
+        border-bottom: 5px solid #b2904c;
+      }
+    }
+
+    .content-tabs {
+      .content {
+        display: none;
+      }
+
+      .active-content {
+        display: block;
+
+        .outerBread {
+          .innerBread {
+            .card {
+              background: #f7f5e8;
+              border-radius: 7px;
+              border: none;
+              margin-left: 19px;
+              padding: 0 5px;
+              height: 100%;
+              text-align: center;
+
+              img {
+                margin-top: -70px;
+                margin-bottom: -46px;
+              }
+
+              .card-body {
+                h5 {
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 800;
+                  font-size: 30px;
+                  padding: 0 10px;
+                  line-height: 35px;
+                  color: #261b6c;
+                }
+
+                p {
+                  font-family: "Avenir LT Std";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 21px;
+                  line-height: 29px;
+                  text-align: center;
+                  color: #261b6c;
+                  opacity: 0.9;
+                }
+              }
+            }
+          }
+        }
+
+        .outermeat {
+          .innermeat {
+            .card {
+              background: #f7f5e8;
+              border-radius: 7px;
+              border: none;
+              margin-left: 19px;
+              padding: 0 5px;
+              height: 100%;
+              text-align: center;
+
+              img {
+                padding: 0 5%;
+              }
+
+              .card-body {
+                h5 {
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 800;
+                  font-size: 30px;
+                  padding: 0 10px;
+                  line-height: 35px;
+                  color: #261b6c;
+                }
+
+                p {
+                  font-family: "Avenir LT Std";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 21px;
+                  line-height: 29px;
+                  text-align: center;
+                  color: #261b6c;
+                  opacity: 0.9;
+                }
+              }
+            }
+          }
+        }
+
+        .outerScones {
+          .innerScones {
+            .card {
+              background: #f7f5e8;
+              border-radius: 7px;
+              border: none;
+              margin-left: 19px;
+              padding: 0 5px;
+              height: 100%;
+              text-align: center;
+
+              img {
+                padding: 0 5%;
+              }
+
+              .card-body {
+                h5 {
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 800;
+                  font-size: 30px;
+                  padding: 0 10px;
+                  line-height: 35px;
+                  color: #261b6c;
+                }
+
+                p {
+                  font-family: "Avenir LT Std";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 21px;
+                  line-height: 29px;
+                  text-align: center;
+                  color: #261b6c;
+                  opacity: 0.9;
+                }
+              }
+            }
+          }
+        }
+
+        .outerDonut {
+          .innerDonut {
+            .card {
+              background: #f7f5e8;
+              border-radius: 7px;
+              border: none;
+              margin-left: 19px;
+              padding: 0 5px;
+              height: 100%;
+              text-align: center;
+
+              img {
+                padding: 0 5%;
+              }
+
+              .card-body {
+                h5 {
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 800;
+                  font-size: 30px;
+                  padding: 0 10px;
+                  line-height: 35px;
+                  color: #261b6c;
+                }
+
+                p {
+                  font-family: "Avenir LT Std";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 21px;
+                  line-height: 29px;
+                  text-align: center;
+                  color: #261b6c;
+                  opacity: 0.9;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tikTokFeed {
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    width: 87%;
+    color: #261b6c;
+  }
+  p {
+    font-family: "AvenirLight";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #261b6c;
+    opacity: 0.8;
+    span {
+      color: #c6a460;
+    }
+  }
+}
+
+.kidsBanner {
+  margin-top: -3%;
+  padding: 0 0 5% 0;
+
+  .kidsItem {
+    img {
+      max-width: 110%;
+      margin-top: -116px;
+    }
+  }
+  .kidsItem2 {
+    img {
+      width: 130%;
+      height: auto;
+      margin: -16% 0 0 -19%;
+    }
+  }
+
+  h1 {
+    font-family: "3Dumb";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 1;
+    color: #261b6c;
+  }
+}
+
+.games {
+  margin-bottom: 20px;
+
+  .gameBackground {
+    border-radius: 10px;
+    padding: 3% 0;
+    margin: 3% 0;
+    color: white;
+  }
+
+  .gameBackground:nth-child(1) {
+    background: #018bf1;
+
+    .btn {
+      color: white;
+      background-color: #b2904c;
+    }
+  }
+
+  .gameBackground:nth-child(2) {
+    background: #ff4655;
+
+    .btn {
+      color: #ff4655;
+      background-color: white;
+    }
+  }
+
+  .gameBackground:nth-child(3) {
+    background: #261b6c;
+
+    .btn {
+      color: white;
+      background-color: #b2904c;
+    }
+  }
+
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 67px;
+  }
+
+  p {
+    font-family: "Avenir LT Std";
+    font-style: normal;
+    font-weight: 750;
+    font-size: 20px;
+    line-height: 25px;
+    opacity: 0.8;
+    padding-right: 27%;
+  }
+
+  .btn {
+    background: #b2904c;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 73px;
+  }
+}
+
+.contactUsPage {
+  .contactUsBanner {
+    position: relative;
+
+    img {
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 85px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+    }
+    .vectorLines {
+      position: absolute;
+      bottom: 0;
+      bottom: 33px;
+      right: 45px;
+    }
+  }
+  .contactAddresses {
+    padding: 10% 0;
+    .outerContact {
+      background: #f7f5e8;
+      border-radius: 10px;
+      margin: 0 10px;
+      padding: 5%;
+      .innerContact {
+        padding: 0 44px;
+        .contactAdresssItem {
+          img {
+            width: 80%;
+          }
+          h3 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 34px;
+            color: #261b6c;
+          }
+          p {
+            font-family: "Avenir LT Std";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            color: #261b6c;
+            margin: 0;
+            span {
+              font-weight: 800;
+            }
+          }
+          .contactMid {
+            margin: 9px 0;
+            p {
+              margin: 0;
+            }
+          }
+          .voip {
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .depots {
+    padding: 0 0 10% 0;
+    .outerDepots {
+      h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 73px;
+        color: #261b6c;
+      }
+      .innerDeports {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        max-width: max-content;
+        margin: 0 10.5%;
+        .depotsItem {
+          .titleBorder {
+            border-bottom: 3px solid #f7f5e8;
+            border-right: 3px solid #f7f5e8;
+            h3 {
+              padding: 15px;
+              color: #261b6c;
+            }
+          }
+          .locationBorder {
+            border-right: #f7f5e8 3px solid;
+            p {
+              padding: 0 15px;
+            }
+          }
+          p {
+            margin: 0;
+            font-family: "Avenir LT Std";
+            font-style: normal;
+            font-weight: 750;
+            font-size: 20px;
+            line-height: 43px;
+            color: #261b6c;
+            opacity: 0.8;
+          }
+        }
+        .depotsItem:nth-child(2) {
+          p {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .enquiries {
+    background: #f8f8f8;
+    padding: 5% 0;
+    .enqTitles {
+      display: flex;
+      justify-content: space-around;
+      .enquiriesItem {
+        h3 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 20px;
+
+          color: #261b6c;
+        }
+        p {
+          font-family: "Avenir LT Std";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 34px;
+          text-decoration-line: underline;
+          color: #261b6c;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .emailUs {
+    padding: 10% 0 2% 0;
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 73px;
+      color: #261b6c;
+    }
+    p {
+      font-family: "Avenir LT Std";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36px;
+      color: #261b6c;
+      opacity: 0.8;
+    }
+    .container {
+      padding: 0 5%;
+      .row {
+        .formItem {
+          font-family: "Avenir LT Std";
+          font-style: normal;
+          font-weight: 750;
+          font-size: 100%;
+          line-height: 30px;
+          select {
+            padding: 13px;
+            font-family: "Avenir LT Std";
+            font-style: normal;
+            font-weight: 750;
+            font-size: 100%;
+            line-height: 30px;
+            background-color: #f7f5e8;
+            border: none;
+            color: gray;
+          }
+          .form-floating {
+            font-family: "Avenir LT Std";
+            input {
+              background-color: #f7f5e8;
+              border: none;
+              color: gray;
+            }
+            label {
+              color: gray;
+            }
+            textarea {
+              background-color: #f7f5e8;
+              border: none;
+              padding-bottom: 15%;
+            }
+            .form-control:focus {
+              box-shadow: 0 0 0 0.25rem #b2904c;
+            }
+          }
+          .form-select:focus {
+            box-shadow: 0 0 0 0.25rem#b2904c;
+          }
+          button {
+            width: 100%;
+            background: #b2904c;
+            border-radius: 5px;
+            font-family: "Avenir LT Std";
+            font-style: normal;
+            font-weight: 750;
+            font-size: 20px;
+            color: white;
+            line-height: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// *** Media Q *** //
+@media screen and (max-width: 408px) {
+  nav {
+    .innerNav {
+      display: flex;
+      .navbar-brand {
+        img {
+          width: 50%;
+        }
+      }
+      ul {
+        flex-direction: column;
+        background-color: #f8f8f8;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        padding: 3% 0;
+        li {
+          margin: 0 0 0 6px;
+
+          a {
+            color: #261b6c;
+            font-family: "AvenirHeavy";
+            font-weight: 750;
+            font-size: 20px;
+            line-height: 41px;
+          }
+        }
+
+        li:nth-child(5) {
+          background-color: rgb(202, 166, 82);
+          padding: 0px 30px;
+          width: 64%;
+          border-radius: 4px;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+    button {
+      position: absolute;
+      top: 33px;
+      right: 13px;
+    }
+  }
+  // .productsPage {
+  //   .productsBanner {
+  //     h1 {
+  //       top: 123px;
+  //       font-size: 14px;
+  //     }
+  //   }
+}
+@media screen and (max-width: 575px) {
+  .homePage {
+    padding: 0;
+    .banner {
+      padding: 10% 0;
+      .innerBanner {
+        padding: 0;
+        .bannerItem {
+          text-align: center;
+          margin-left: 11px;
+          h1 {
+            margin: 0 0 0 0;
+            font-size: 39px;
+          }
+          p {
+            font-size: 25px;
+            margin-top: 15px;
+          }
+        }
+        .bannerImages {
+          margin-top: 4%;
+          display: none;
+          img:nth-child(1) {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .aboutBakerInn {
+      text-align: center;
+      .innerAboutBakersInn {
+        padding: 0;
+      }
+      .outerAboutBakerInn {
+        margin: 0;
+        .AboutBakerInnItem {
+          h2 {
+            font-size: 28px;
+          }
+        }
+        .AboutBakerInnItem2 {
+          p {
+            font-size: 20px;
+            line-height: 1.5;
+          }
+          .btn {
+            font-size: 15px;
+          }
+        }
+        .AboutImages {
+          .AboutBakerInnImages {
+            img {
+              height: auto;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .ourProducts {
+      padding: 10% 0;
+      h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 73px;
+        color: #261b6c;
+      }
+      .OuterOurProducts {
+        .innerOurProducts {
+          .ourProductsImages {
+            img {
+              height: auto;
+            }
+          }
+        }
+        .btn {
+          font-size: 14px;
+        }
+      }
+    }
+    .bookATour {
+      text-align: center;
+      .outerBookTour {
+        .innerBookTour {
+          display: flex;
+          flex-direction: column-reverse;
+          .bookTourItem {
+            p {
+              padding: 0;
+              font-size: 17px;
+              line-height: 1.5;
+            }
+            h2 {
+              width: 100%;
+              font-size: 28px;
+            }
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .donationReq {
+      text-align: center;
+      padding: 10% 0;
+      .container-fluid {
+        .row {
+          .col-lg-6 {
+            h2 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 17px;
+              line-height: 1.5;
+            }
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .kidsCorner {
+      .container-fluid {
+        padding: 15% 8px;
+        .row {
+          .col-lg-6 {
+            .kidsImage {
+              img {
+                display: none;
+              }
+            }
+            h2 {
+              font-size: 78px;
+              line-height: 1;
+              margin-bottom: 8px;
+            }
+            p {
+              padding: 0;
+              font-size: 17px;
+              line-height: 1.5;
+            }
+            .btn {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .bakersRecipes {
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .outerBakersRec {
+        .content-tabs {
+          .active-content {
+            .bakercard {
+              margin-bottom: 20px;
+
+              .card {
+                .card-body {
+                  h5 {
+                    font-size: 22px;
+                  }
+                  p {
+                    font-size: 12px;
+                  }
+                  .btn {
+                    padding: 8px;
+                    width: 21%;
+                    margin: -55px 0 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .getNotified {
+      padding: 5% 0;
+      margin: 25% 0;
+      .outerGetNot {
+        .innerrGetNot {
+          .getNotItem {
+            h2 {
+              font-size: 24px;
+              text-align: center;
+              margin-left: 15px;
+              margin-top: 0;
+            }
+            .d-flex {
+              img {
+                display: none;
+              }
+            }
+
+            .input-group {
+              input {
+                padding: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aboutUs {
+    .aboutBanner {
+      h1 {
+        top: 128px;
+        font-size: 25px;
+      }
+    }
+
+    .ourVisions {
+      .outerVisions {
+        .innerOurVisions {
+          .ourVisionItem {
+            .d-flex {
+              .missionText {
+                h2 {
+                  font-size: 22px;
+                  line-height: 1.5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ourCoreValues {
+      h2 {
+        font-size: 27px;
+      }
+
+      .outerCoreValues {
+        .coreCards {
+          .card {
+            .card-body {
+              h5 {
+                font-size: 28px;
+              }
+              p {
+                line-height: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .aboutCeo {
+      padding: 20% 0;
+      .outerAboutCeo {
+        .innerAboutCeo {
+          .AboutCeoItem {
+            .ceoPadd {
+              text-align: center;
+              h2 {
+                font-size: 30px;
+                line-height: 1.5;
+              }
+              p {
+                line-height: 1.5;
+              }
+              .ceoSignature {
+                text-align: center !important;
+                p {
+                  font-size: 30px;
+                  span {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .productsPage {
+    .productsBanner {
+      h1 {
+        top: 123px;
+        font-size: 14px;
+      }
+    }
+
+    .ourProducts {
+      padding: 10% 0;
+      h2 {
+        font-size: 30px;
+      }
+      .innerOurProducts {
+        .ourProductsImages {
+          img {
+            height: auto;
+          }
+        }
+      }
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+      .content-tabs {
+        padding: 0;
+        .active-content {
+          .outerBread {
+            .innerBread {
+              .card {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bakersRecipes {
+    .outerBakersRec {
+      h2 {
+        font-size: 27px;
+      }
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+      .content-tabs {
+        .active-content {
+          .bakercard {
+            margin-bottom: 20px;
+
+            .card {
+              .card-body {
+                h5 {
+                  font-size: 22px;
+                }
+                p {
+                  font-size: 12px;
+                }
+                .btn {
+                  padding: 8px;
+                  width: 21%;
+                  margin: -55px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .kidsBanner {
+    .row {
+      flex-flow: column-reverse;
+    }
+    .kidsItem {
+      img {
+        width: 100%;
+        margin: 0;
+      }
+    }
+    .kidsItem2 {
+      img {
+        width: 100%;
+        margin: 0 0 0;
+      }
+    }
+  }
+
+  .games {
+    text-align: center;
+    .gameBackground {
+      padding: 5% 0;
+      .row {
+        flex-direction: column-reverse;
+      }
+    }
+    p {
+      padding: 0;
+    }
+  }
+
+  .contactUsPage {
+    .contactUsBanner {
+      h1 {
+        top: 123px;
+        font-size: 14px;
+      }
+    }
+    .contactAddresses {
+      .outerContact {
+        padding: 18% 5%;
+        .innerContact {
+          padding: 0;
+          .contactAdresssItem {
+            text-align: center;
+            h3 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 15px;
+            }
+            .voip {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .depots {
+      .outerDepots {
+        h1 {
+          font-size: 20px;
+        }
+        .innerDeports {
+          .depotsItem {
+            .titleBorder {
+              h3 {
+                font-size: 13px;
+              }
+            }
+            .locationBorder {
+              p {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .enquiries {
+      text-align: center;
+      .enqTitles {
+        flex-direction: column;
+        .enquiriesItem {
+          h3 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .emailUs {
+      h2 {
+        font-size: 2;
+      }
+    }
+  }
+
+  footer {
+    padding: 0 0 5% 0;
+    .outerFooter {
+      .innerFooter {
+        justify-content: space-between;
+      }
+    }
+    .copyright {
+      display: block;
+      margin-top: 30px;
+      .d-flex {
+        p {
+          line-height: 34px;
+        }
+      }
+      p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 575px) and (max-width: 766px) {
+  .homePage {
+    padding: 0;
+    .banner {
+      padding: 10% 0;
+      .innerBanner {
+        padding: 0;
+        .bannerItem {
+          text-align: center;
+          margin-left: 11px;
+          h1 {
+            margin: 0 0 0 0;
+            font-size: 39px;
+          }
+          p {
+            font-size: 25px;
+            margin-top: 15px;
+          }
+        }
+        .bannerImages {
+          margin-top: 4%;
+          display: none;
+          img:nth-child(1) {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .aboutBakerInn {
+      text-align: center;
+      .innerAboutBakersInn {
+        padding: 0;
+      }
+      .outerAboutBakerInn {
+        margin: 0;
+        .AboutBakerInnItem {
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .AboutBakerInnItem2 {
+          p {
+            font-size: 20px;
+            line-height: 1.5;
+          }
+          .btn {
+            font-size: 15px;
+          }
+        }
+        .AboutImages {
+          .AboutBakerInnImages {
+            img {
+              height: auto;
+              width: 100%;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .ourProducts {
+      padding: 10% 0;
+      h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 73px;
+        color: #261b6c;
+      }
+      .OuterOurProducts {
+        .btn {
+          font-size: 14px;
+        }
+        .innerOurProducts {
+          .ourProductsImages {
+            img {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .bookATour {
+      text-align: center;
+      .outerBookTour {
+        .innerBookTour {
+          display: flex;
+          flex-direction: column-reverse;
+          .bookTourItem {
+            p {
+              padding: 0;
+              font-size: 17px;
+              line-height: 1.5;
+            }
+            h2 {
+              width: 100%;
+              font-size: 30px;
+            }
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .donationReq {
+      text-align: center;
+      padding: 10% 0;
+      .container-fluid {
+        .row {
+          .col-lg-6 {
+            h2 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 17px;
+              line-height: 1.5;
+            }
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .kidsCorner {
+      .container-fluid {
+        padding: 15% 8px;
+        .row {
+          .col-lg-6 {
+            .kidsImage {
+              img {
+                display: none;
+              }
+            }
+            h2 {
+              font-size: 78px;
+              line-height: 1;
+              margin-bottom: 8px;
+            }
+            p {
+              padding: 0;
+              font-size: 17px;
+              line-height: 1.5;
+            }
+            .btn {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .bakersRecipes {
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .outerBakersRec {
+        .content-tabs {
+          .active-content {
+            .bakercard {
+              margin-bottom: 20px;
+
+              .card {
+                .card-body {
+                  h5 {
+                    font-size: 22px;
+                  }
+                  p {
+                    font-size: 12px;
+                  }
+                  .btn {
+                    padding: 8px;
+                    width: 21%;
+                    margin: -55px 0 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .getNotified {
+      padding: 5% 0;
+      margin: 25% 0;
+      .outerGetNot {
+        .innerrGetNot {
+          .getNotItem {
+            h2 {
+              font-size: 24px;
+              text-align: center;
+              margin-left: 15px;
+              margin-top: 0;
+            }
+            .d-flex {
+              img {
+                display: none;
+              }
+            }
+
+            .input-group {
+              input {
+                padding: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aboutUs {
+    .aboutBanner {
+      h1 {
+        top: 198px;
+        font-size: 25px;
+      }
+    }
+
+    .ourVisions {
+      .outerVisions {
+        .innerOurVisions {
+          .ourVisionItem {
+            .d-flex {
+              .missionText {
+                h2 {
+                  font-size: 22px;
+                  line-height: 1.5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ourCoreValues {
+      h2 {
+        font-size: 27px;
+      }
+
+      .outerCoreValues {
+        .coreCards {
+          .card {
+            .card-body {
+              h5 {
+                font-size: 28px;
+              }
+              p {
+                line-height: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .aboutCeo {
+      padding: 20% 0;
+      .outerAboutCeo {
+        .innerAboutCeo {
+          .AboutCeoItem {
+            .ceoPadd {
+              text-align: center;
+              h2 {
+                font-size: 30px;
+                line-height: 1.5;
+              }
+              p {
+                line-height: 1.5;
+              }
+              .ceoSignature {
+                text-align: center !important;
+                p {
+                  font-size: 30px;
+                  span {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .productsPage {
+    .productsBanner {
+      h1 {
+        top: 198px;
+        font-size: 21px;
+      }
+    }
+
+    .ourProducts {
+      padding: 10% 0;
+      h2 {
+        font-size: 30px;
+      }
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+      .content-tabs {
+        padding: 0;
+        .active-content {
+          .outerBread {
+            .innerBread {
+              .card {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bakersRecipes {
+    .outerBakersRec {
+      h2 {
+        font-size: 27px;
+      }
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+      .content-tabs {
+        .active-content {
+          .bakercard {
+            margin-bottom: 20px;
+
+            .card {
+              .card-body {
+                h5 {
+                  font-size: 22px;
+                }
+                p {
+                  font-size: 12px;
+                }
+                .btn {
+                  padding: 8px;
+                  width: 21%;
+                  margin: -55px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .kidsBanner {
+    .row {
+      flex-flow: column-reverse;
+    }
+    .kidsItem {
+      img {
+        width: 100%;
+        margin: 0;
+      }
+    }
+    .kidsItem2 {
+      img {
+        width: 100%;
+        margin: 0 0 0;
+      }
+    }
+  }
+
+  .games {
+    text-align: center;
+    .gameBackground {
+      padding: 5% 0;
+      .row {
+        flex-direction: column-reverse;
+      }
+    }
+    p {
+      padding: 0;
+    }
+  }
+
+  .contactUsPage {
+    .contactUsBanner {
+      h1 {
+        top: 198px;
+        font-size: 21px;
+      }
+    }
+    .contactAddresses {
+      .outerContact {
+        padding: 18% 5%;
+        .innerContact {
+          padding: 0;
+          .contactAdresssItem {
+            text-align: center;
+            h3 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 15px;
+            }
+            .voip {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .depots {
+      .outerDepots {
+        h1 {
+          font-size: 20px;
+        }
+        .innerDeports {
+          .depotsItem {
+            .titleBorder {
+              h3 {
+                font-size: 13px;
+              }
+            }
+            .locationBorder {
+              p {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .enquiries {
+      text-align: center;
+      .enqTitles {
+        flex-direction: column;
+        .enquiriesItem {
+          h3 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .emailUs {
+      h2 {
+        font-size: 2;
+      }
+    }
+  }
+
+  footer {
+    padding: 0 0 5% 0;
+    .outerFooter {
+      .innerFooter {
+        justify-content: space-between;
+      }
+    }
+    .copyright {
+      display: block;
+      margin-top: 30px;
+      .d-flex {
+        p {
+          line-height: 34px;
+        }
+      }
+      p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    .innerNav {
+      .navbar-brand {
+        img {
+          width: 80%;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+          margin: 0 15px;
+
+          a {
+            color: #261b6c;
+            font-family: "AvenirHeavy";
+            font-weight: 750;
+            font-size: 20px;
+            line-height: 41px;
+          }
+        }
+
+        li:nth-child(5) {
+          background-color: rgb(202, 166, 82);
+          padding: 0px 30px;
+          border-radius: 4px;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+    .btn {
+      display: none;
+      position: absolute;
+      right: 0;
+      z-index: 2;
+    }
+  }
+  .homePage {
+    padding: 0;
+    .banner {
+      padding: 10% 0;
+      .innerBanner {
+        padding: 0;
+        .bannerItem {
+          text-align: center;
+          margin-left: 11px;
+          h1 {
+            margin: 0 0 0 0;
+            font-size: 31px;
+          }
+          p {
+            font-size: 25px;
+            margin-top: 15px;
+          }
+        }
+        .bannerImages {
+          margin-top: 4%;
+          display: none;
+          img:nth-child(1) {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .aboutBakerInn {
+      .innerAboutBakersInn {
+        padding: 0;
+      }
+      .outerAboutBakerInn {
+        margin: 0;
+        .AboutBakerInnItem {
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .AboutBakerInnItem2 {
+          p {
+            padding: 0;
+            font-size: 17px;
+            line-height: 1.5;
+          }
+          .btn {
+            font-size: 15px;
+          }
+        }
+        .AboutImages {
+          .AboutBakerInnImages {
+            img {
+              height: 100%;
+              width: 100%;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .ourProducts {
+      padding: 10% 0;
+      h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 73px;
+        color: #261b6c;
+      }
+      .OuterOurProducts {
+        .btn {
+          font-size: 14px;
+        }
+        .innerOurProducts {
+          .ourProductsImages {
+            img {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .bookATour {
+      text-align: center;
+      .outerBookTour {
+        .innerBookTour {
+          flex-direction: row;
+          .bookTourItem {
+            p {
+              padding: 0;
+              font-size: 17px;
+              line-height: 1.5;
+            }
+            h2 {
+              width: 100%;
+              font-size: 30px;
+            }
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .donationReq {
+      text-align: center;
+      padding: 10% 0;
+      .container-fluid {
+        .row {
+          .col-lg-6 {
+            h2 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 17px;
+              line-height: 1.5;
+            }
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .kidsCorner {
+      .container-fluid {
+        padding: 15% 8px;
+        .row {
+          .col-lg-6 {
+            .kidsImage {
+              img {
+                display: none;
+              }
+            }
+            h2 {
+              font-size: 78px;
+              line-height: 1;
+              margin-bottom: 8px;
+            }
+            p {
+              padding: 0;
+              font-size: 17px;
+              line-height: 1.5;
+            }
+            .btn {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .bakersRecipes {
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .outerBakersRec {
+        .content-tabs {
+          .active-content {
+            .bakercard {
+              margin-bottom: 20px;
+
+              .card {
+                .card-body {
+                  h5 {
+                    font-size: 15px;
+                  }
+                  p {
+                    font-size: 10px;
+                  }
+                  .btn {
+                    padding: 8px;
+                    width: 21%;
+                    margin: -55px 0 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .getNotified {
+      padding: 5% 0;
+      margin: 0 0 8% 0;
+      .outerGetNot {
+        .innerrGetNot {
+          .getNotItem {
+            h2 {
+              font-size: 24px;
+              text-align: center;
+              margin-left: 15px;
+              margin-top: 0;
+            }
+            .d-flex {
+              img {
+                display: none;
+              }
+            }
+
+            .input-group {
+              input {
+                padding: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aboutUs {
+    .aboutBanner {
+      h1 {
+        top: 286px;
+        font-size: 25px;
+      }
+    }
+
+    .ourVisions {
+      .outerVisions {
+        .innerOurVisions {
+          .ourVisionItem {
+            .d-flex {
+              .missionText {
+                h2 {
+                  font-size: 22px;
+                  line-height: 1.5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ourCoreValues {
+      h2 {
+        font-size: 27px;
+      }
+
+      .outerCoreValues {
+        .coreValueitem:nth-child(4) {
+          margin: 0;
+        }
+        .coreValueitem:nth-child(5) {
+          margin: 0;
+        }
+        .coreCards {
+          .card {
+            .card-body {
+              h5 {
+                font-size: 28px;
+              }
+              p {
+                line-height: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .aboutCeo {
+      padding: 20% 0;
+      .outerAboutCeo {
+        .innerAboutCeo {
+          .AboutCeoItem {
+            .ceoPadd {
+              text-align: center;
+              h2 {
+                font-size: 30px;
+                line-height: 1.5;
+              }
+              p {
+                line-height: 1.5;
+              }
+              .ceoSignature {
+                text-align: center !important;
+                p {
+                  font-size: 30px;
+                  span {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .productsPage {
+    .productsBanner {
+      h1 {
+        top: 286px;
+        font-size: 21px;
+      }
+    }
+
+    .ourProducts {
+      padding: 10% 0;
+      h2 {
+        font-size: 30px;
+      }
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+      .content-tabs {
+        padding: 0;
+      }
+    }
+  }
+
+  .bakersRecipes {
+    .outerBakersRec {
+      h2 {
+        font-size: 27px;
+      }
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+      .content-tabs {
+        .active-content {
+          .bakercard {
+            margin-bottom: 20px;
+
+            .card {
+              .card-body {
+                h5 {
+                  font-size: 15px;
+                }
+                p {
+                  font-size: 12px;
+                }
+                .btn {
+                  padding: 8px;
+                  width: 21%;
+                  margin: -55px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .kidsBanner {
+    .row {
+      flex-flow: column-reverse;
+    }
+    .kidsItem {
+      img {
+        width: 100%;
+        margin: 0;
+      }
+    }
+    .kidsItem2 {
+      img {
+        width: 100%;
+        margin: 0 0 0;
+      }
+    }
+  }
+
+  .games {
+    text-align: center;
+    .gameBackground {
+      padding: 5% 0;
+      .row {
+        flex-direction: column-reverse;
+        .gameItem {
+          img {
+            width: 90%;
+          }
+        }
+      }
+    }
+    p {
+      padding: 0;
+    }
+  }
+
+  .contactUsPage {
+    .contactUsBanner {
+      h1 {
+        top: 286px;
+        font-size: 21px;
+      }
+    }
+    .contactAddresses {
+      .outerContact {
+        padding: 18% 5%;
+        .innerContact {
+          padding: 0;
+          .contactAdresssItem {
+            text-align: center;
+            h3 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 15px;
+            }
+            .voip {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .depots {
+      .outerDepots {
+        h1 {
+          font-size: 20px;
+        }
+        .innerDeports {
+          .depotsItem {
+            .titleBorder {
+              h3 {
+                font-size: 13px;
+              }
+            }
+            .locationBorder {
+              p {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .enquiries {
+      text-align: center;
+      .enqTitles {
+        flex-direction: row;
+        .enquiriesItem {
+          h3 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .emailUs {
+      h2 {
+        font-size: 2;
+      }
+    }
+  }
+
+  footer {
+    padding: 0 0 5% 0;
+    .outerFooter {
+      .innerFooter {
+        justify-content: space-between;
+      }
+    }
+    .copyright {
+      display: block;
+      margin-top: 30px;
+      .d-flex {
+        p {
+          line-height: 34px;
+        }
+      }
+      p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    .innerNav {
+      .navbar-brand {
+        img {
+          width: 80%;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+          margin: 0 15px;
+
+          a {
+            color: #261b6c;
+            font-family: "AvenirHeavy";
+            font-weight: 750;
+            font-size: 16px;
+            line-height: 41px;
+          }
+        }
+
+        li:nth-child(5) {
+          background-color: rgb(202, 166, 82);
+          padding: 0px 30px;
+          border-radius: 4px;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+    .btn {
+      display: none;
+      position: absolute;
+      right: 0;
+      z-index: 2;
+    }
+  }
+  .homePage {
+    padding: 0;
+    .banner {
+      padding: 10% 0;
+      .innerBanner {
+        padding: 0;
+        .bannerItem {
+          text-align: center;
+          margin-left: 11px;
+          h1 {
+            margin: 0 0 0 0;
+            font-size: 31px;
+          }
+          p {
+            font-size: 25px;
+            margin-top: 15px;
+          }
+        }
+        .bannerImages {
+          margin-top: 4%;
+          display: none;
+          img:nth-child(1) {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .aboutBakerInn {
+      .innerAboutBakersInn {
+        padding: 0;
+      }
+      .outerAboutBakerInn {
+        margin: 0;
+        .AboutBakerInnItem {
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .AboutBakerInnItem2 {
+          p {
+            padding: 0;
+            font-size: 20px;
+            line-height: 1.5;
+          }
+          .btn {
+            font-size: 15px;
+          }
+        }
+        .AboutImages {
+          .AboutBakerInnImages {
+            img {
+              height: 100%;
+              width: 100%;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .ourProducts {
+      padding: 10% 0;
+      h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 73px;
+        color: #261b6c;
+      }
+      .OuterOurProducts {
+        .btn {
+          font-size: 14px;
+        }
+        .innerOurProducts {
+          .ourProductsImages {
+            img {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .bookATour {
+      text-align: center;
+      .outerBookTour {
+        .innerBookTour {
+          flex-direction: row;
+          .bookTourItem {
+            p {
+              padding: 0;
+              font-size: 20px;
+              line-height: 1.5;
+              text-align: start;
+            }
+            h2 {
+              width: 100%;
+              font-size: 30px;
+            }
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .donationReq {
+      text-align: center;
+      padding: 10% 0;
+      .container-fluid {
+        .row {
+          .col-lg-6 {
+            h2 {
+              font-size: 30px;
+            }
+            p {
+              font-size: 20px;
+              text-align: start;
+              line-height: 1.5;
+            }
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .kidsCorner {
+      .container-fluid {
+        padding: 15% 8px;
+        .row {
+          .col-lg-6 {
+            .kidsImage {
+              img {
+                display: none;
+              }
+            }
+            h2 {
+              font-size: 78px;
+              line-height: 1;
+              margin-bottom: 8px;
+            }
+            p {
+              text-align: start;
+              padding: 0;
+              font-size: 20px;
+              line-height: 1.5;
+            }
+            .btn {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .bakersRecipes {
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .outerBakersRec {
+        .content-tabs {
+          .active-content {
+            .bakercard {
+              margin-bottom: 20px;
+
+              .card {
+                .card-body {
+                  h5 {
+                    font-size: 15px;
+                  }
+                  p {
+                    font-size: 10px;
+                  }
+                  .btn {
+                    padding: 8px;
+                    width: 21%;
+                    margin: -55px 0 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .getNotified {
+      padding: 5% 0;
+      margin: 0 0 8% 0;
+      .outerGetNot {
+        .innerrGetNot {
+          .getNotItem {
+            h2 {
+              font-size: 24px;
+              text-align: center;
+              margin-left: 15px;
+              margin-top: 0;
+            }
+            .d-flex {
+              img {
+                display: none;
+              }
+            }
+
+            .input-group {
+              input {
+                padding: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aboutUs {
+    .aboutBanner {
+      h1 {
+        top: 382px;
+        font-size: 36px;
+      }
+    }
+
+    .ourVisions {
+      .outerVisions {
+        .innerOurVisions {
+          .ourVisionItem {
+            .d-flex {
+              .missionText {
+                h2 {
+                  font-size: 22px;
+                  line-height: 1.5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ourCoreValues {
+      h2 {
+        font-size: 27px;
+      }
+
+      .outerCoreValues {
+        .coreValueitem:nth-child(4) {
+          margin: 0;
+        }
+        .coreValueitem:nth-child(5) {
+          margin: 0;
+        }
+        .coreCards {
+          .card {
+            .card-body {
+              h5 {
+                font-size: 28px;
+              }
+              p {
+                line-height: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .aboutCeo {
+      padding: 20% 0;
+      .outerAboutCeo {
+        .innerAboutCeo {
+          .AboutCeoItem {
+            .ceoPadd {
+              text-align: center;
+              h2 {
+                font-size: 30px;
+                line-height: 1.5;
+              }
+              p {
+                line-height: 1.5;
+              }
+              .ceoSignature {
+                text-align: center !important;
+                p {
+                  font-size: 30px;
+                  span {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .productsPage {
+    .productsBanner {
+      h1 {
+        top: 382px;
+        font-size: 36px;
+      }
+    }
+
+    .ourProducts {
+      padding: 10% 0;
+      h2 {
+        font-size: 30px;
+      }
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+      .content-tabs {
+        padding: 0;
+      }
+    }
+  }
+
+  .bakersRecipes {
+    .outerBakersRec {
+      h2 {
+        font-size: 27px;
+      }
+      .bloc-tabs {
+        .tabs {
+          padding: 0 0 0 18px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+      .content-tabs {
+        .active-content {
+          .bakercard {
+            margin-bottom: 20px;
+
+            .card {
+              .card-body {
+                h5 {
+                  font-size: 15px;
+                }
+                p {
+                  font-size: 12px;
+                }
+                .btn {
+                  padding: 8px;
+                  width: 21%;
+                  margin: -55px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .kidsBanner {
+    padding: 5% 0 0 0;
+    .row {
+      flex-flow: column-reverse;
+    }
+    .kidsItem {
+      img {
+        width: 100%;
+        margin: 0;
+      }
+    }
+    .kidsItem2 {
+      display: none;
+      img {
+        width: 100%;
+        margin: 0 0 0;
+      }
+    }
+  }
+
+  // .games {
+  //   text-align: center;
+  //   .gameBackground {
+  //     padding: 5% 0;
+  //     .row {
+  //       flex-direction: column-reverse;
+  //       .gameItem {
+  //         img {
+  //           width: 90%;
+  //         }
+  //       }
+  //     }
+  //   }
+  //   p {
+  //     padding: 0;
+  //   }
+  // }
+
+  .contactUsPage {
+    .contactUsBanner {
+      h1 {
+        top: 382px;
+        font-size: 36px;
+      }
+    }
+    .contactAddresses {
+      .outerContact {
+        padding: 18% 5%;
+        .innerContact {
+          padding: 0;
+          .contactAdresssItem {
+            text-align: center;
+            h3 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 15px;
+            }
+            .voip {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .depots {
+      .outerDepots {
+        h1 {
+          font-size: 20px;
+        }
+        .innerDeports {
+          .depotsItem {
+            .titleBorder {
+              h3 {
+                font-size: 13px;
+              }
+            }
+            .locationBorder {
+              p {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .enquiries {
+      text-align: center;
+      .enqTitles {
+        flex-direction: row;
+        .enquiriesItem {
+          h3 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .emailUs {
+      h2 {
+        font-size: 2;
+      }
+    }
+  }
+
+  // footer {
+  //   padding: 0 0 5% 0;
+  //   .outerFooter {
+  //     .innerFooter {
+  //       justify-content: space-between;
+  //     }
+  //   }
+  //   .copyright {
+  //     display: block;
+  //     margin-top: 30px;
+  //     .d-flex {
+  //       p {
+  //         line-height: 34px;
+  //       }
+  //     }
+  //     p {
+  //       font-size: 15px;
+  //       line-height: 1.5;
+  //       margin-top: 15px;
+  //       margin-bottom: 20px;
+  //     }
+  //   }
+  // }
+}
